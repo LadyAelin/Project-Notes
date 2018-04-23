@@ -1,0 +1,27 @@
+/*
+ *Rebeka Henry
+ *rebek.henry7@gmail.com
+ *C++ Program
+ *The following program prompts the user to enter any character and then,
+ *converts it to uppercase using ascii code. It then prints out,
+ *the DEC part of the user input character.
+ *When a user enters anything other than a lower case character, the DEC,
+ *in ascii is subtracted by 32 and in place of the upper case, a different,
+ character takes its place depending on the character that the user inputs
+ *When the user inputs a whitespace, it is treated as a character and
+ *the program prints it out in place of the character that the user
+ *inputs after the space
+ */
+#include <iostream>
+const int DIFF = 'a' - 'A';
+using namespace std;
+int main()
+{
+    char nam;
+    cout << "Enter any character\n>";
+    cin.get(nam);
+    int upr = nam - DIFF;
+    cout << "The uppercase equivalent of '" << nam << "' is '"
+         << char(upr) << "'(decimal value = " << upr << ")";
+    return 0;
+}
