@@ -1,0 +1,23 @@
+/*
+ *Rebeka Henry
+ *rebek.henry7@gmail.com
+ *4/15/18
+ *C1A1E2_main.c
+ *Win7
+ *Code Blocks 17.12
+ *C Program that prints only using printf
+ */
+
+#include <stdio.h>
+
+
+int main(void)
+{
+   printf("Commenting code \"improperly\" can lead to a career in fast food.\n"
+          "\"Portable\" code runs the same way on all platforms.\n"
+          "\\n produces \\n, \\r\\n, or \\r, depending upon the OS.\n"
+          "%%d is for char/short/int in printf but only for int in scanf.\n"
+          "Don't use %%le, %%lf, or %%lg for type double in printf.\n"
+          "Use %%%% in a printf format string to display %%.");
+   return 0;
+}
