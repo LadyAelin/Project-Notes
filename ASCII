@@ -11,7 +11,7 @@
  character takes its place depending on the character that the user inputs
  *When the user inputs a whitespace, it is treated as a character and
  *the program prints it out in place of the character that the user
- *inputs after the space
+ *inputs after the space.
  */
 #include <iostream>
 const int DIFF = 'a' - 'A';
