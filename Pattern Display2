@@ -1,0 +1,25 @@
+
+
+
+#include <iostream>
+
+using namespace std;
+const char LEADER_CHAR = '^';
+const char DIAGONAL_CHAR = '@';
+int main()
+{
+    int userf, lineCount, charCount;
+    cout<<"Enter any positive decimal integer value\n";
+    std::cin >> (userf); 
+    for (int lineCount= 0; lineCount < userf; lineCount++)
+    {
+        for(int charCount= 1; charCount <= lineCount; charCount++)
+        {
+            cout << LEADER_CHAR;
+        }
+        
+            cout <<DIAGONAL_CHAR << '\n';
+    }
+
+    return 0;
+}
