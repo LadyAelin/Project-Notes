@@ -5,7 +5,7 @@
  *C1A2E2_main.c
  *Win7
  *Code Blocks 17.12
- *C Program
+ *C Program: this program simply displays a user input
  */
 #define LEADER_CHAR '^'
 #define DIAGONAL_CHAR '@'
