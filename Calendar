@@ -1,16 +1,18 @@
+#include <stdio.h>
 /*This is a simple program that displays a month calendar May 2018*/
+
 int main()
 {
    //declaration of variables using a string May 2018
    //prinf used to display the number of days
    
     char mon_0[10]= " M ";
-	char tue_0[10]= " T";
-	char wed_0[10]= "  W";
-	char thurs_0[10]= "  T";
-	char fri_0[10]= "  F";
-	char sat_0[10]= "  S";
-	char sun_0[10]=  "  S";
+	char tue_0[10]= " TU";
+	char wed_0[10]= " W";
+	char thurs_0[10]= "  TH";
+	char fri_0[10]= " F";
+	char sat_0[10]= " SA";
+	char sun_0[10]=  " SU";
 	
 	printf("%s%s%s%s%s%s%s\n", mon_0, tue_0, wed_0, thurs_0, fri_0, sat_0, sun_0);
 	printf("---------------------\n");
@@ -71,6 +73,23 @@ int main()
     
     printf("%s%s%s%s%s%s%s\n", mon_5, tue_5, wed_5, thurs_5, fri_5, sat_5, sun_5);
     printf("\n");
+    
+    //calendar used as a reference point for the month of may when asking for user Input
+    //
+    
+    char week_1[10];
+    printf("What day of the week is it?\n");
+    printf("Input M TU W TH F SA SU\n");
+    scanf("%s", &week_1);
+    printf("The day of the week is a %s\n", week_1);
+    
+    char day_0[10];
+    printf("What number is associated with it?\n");
+    printf("Input a number from 1-30\n");
+    scanf("%s", &day_0);
+    
+    printf("Today in May of 2018 it is a %s which falls on the %s day\n", week_1, day_0);
+    
     
 
     return 0;
