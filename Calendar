@@ -1,0 +1,77 @@
+/*This is a simple program that displays a month calendar May 2018*/
+int main()
+{
+   //declaration of variables using a string May 2018
+   //prinf used to display the number of days
+   
+    char mon_0[10]= " M ";
+	char tue_0[10]= " T";
+	char wed_0[10]= "  W";
+	char thurs_0[10]= "  T";
+	char fri_0[10]= "  F";
+	char sat_0[10]= "  S";
+	char sun_0[10]=  "  S";
+	
+	printf("%s%s%s%s%s%s%s\n", mon_0, tue_0, wed_0, thurs_0, fri_0, sat_0, sun_0);
+	printf("---------------------\n");
+    
+    
+    char mon_1[10]= "  ";
+	char tue_1[10]= "  1 ";
+	char wed_1[10]= " 2 ";
+	char thurs_1[10]= " 3 ";
+	char fri_1[10]= " 4 ";
+	char sat_1[10]= " 5 ";
+	char sun_1[10]=  " 6 ";
+	
+	 printf("%s%s%s%s%s%s%s\n", mon_1, tue_1, wed_1, thurs_1, fri_1, sat_1, sun_1);
+
+
+
+	char mon_2[10]= " 7 ";
+	char tue_2[10]= " 8 ";
+	char wed_2[10]= " 9 ";
+	char thurs_2[10]= " 10 ";
+	char fri_2[10]=  "11 ";
+	char sat_2[10]= "12 ";
+	char sun_2[10]= "13 ";
+	
+	printf("%s%s%s%s%s%s%s\n", mon_2, tue_2, wed_2, thurs_2, fri_2, sat_2, sun_2);
+
+
+	char mon_3[10]= "14 ";
+	char tue_3[10]= "15 ";
+	char wed_3[10]= "16 ";
+	char thurs_3[10]= " 17 ";
+	char fri_3[10]= "18 ";
+	char sat_3[10]= "19 ";
+	char sun_3[10]= "20 ";
+	
+	printf("%s%s%s%s%s%s%s\n", mon_3, tue_3, wed_3, thurs_3, fri_3, sat_3, sun_3);
+
+
+	char mon_4[10]= "21 ";
+	char tue_4[10]= "22 ";
+	char wed_4[10]= "23 ";
+	char thurs_4[10]= " 24 ";
+	char fri_4[10]= "25 ";
+	char sat_4[10]= "26 ";
+	char sun_4[10]= "27 ";
+	
+	printf("%s%s%s%s%s%s%s\n", mon_4, tue_4, wed_4, thurs_4, fri_4, sat_4, sun_4);
+
+
+	char mon_5[10]= "28 ";
+	char tue_5[10]= "29 ";
+	char wed_5[10]= "30 ";
+	char thurs_5[10]= " 31 ";
+	char fri_5[10]= " ";
+	char sat_5[10]= " ";
+	char sun_5[10]= " ";
+    
+    printf("%s%s%s%s%s%s%s\n", mon_5, tue_5, wed_5, thurs_5, fri_5, sat_5, sun_5);
+    printf("\n");
+    
+
+    return 0;
+}
