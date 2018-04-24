@@ -5,7 +5,7 @@
  *C1A2E3_main.c
  *Win7
  *Code Blocks 17.12
- *C++ Program: this program displays a user inputed pattern
+ *C++ Program: this program displays a user inputed pattern that tracks the number of lines and displays characters
  */
 #include <iostream>
 
