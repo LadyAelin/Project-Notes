@@ -1,0 +1,22 @@
+# This is a simple program that calculates the linear function y = mx + b
+# It makes the assumption that the user is inputting positive integer values
+# For the calculation
+
+print ('Welcome to Equations\n')
+name = input('Enter your name: ')
+type(name)
+print ("Hi", name)
+
+print ("Formula: y = mx + b")
+
+m = int(input('Input m:\n'))
+type(m)
+
+x = int(input('Input x:\n'))
+type(x)
+
+b= int(input('Input b:\n'))
+type(b)
+
+y= (m * x) + b
+print ("y = ", y)
