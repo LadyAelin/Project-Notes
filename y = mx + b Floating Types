@@ -1,0 +1,22 @@
+# This is a simple program that calculates the linear function for floating type variables
+# It's sole purpose is designed for decimal values
+
+
+print ('Welcome to Equations\n')
+name = input('Enter your name: ')
+type(name)
+print ("Hi", name)
+
+print ("Formula: y = mx + b")
+
+m = float(input('Input m:\n'))
+type(m)
+
+x = float(input('Input x:\n'))
+type(x)
+
+b= float(input('Input b:\n'))
+type(b)
+
+y= (m * x) + b
+print ("y = ", y)
