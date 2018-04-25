@@ -1,6 +1,5 @@
 # This is a simple program that calculates the linear function y = mx + b
-# It makes the assumption that the user is inputting positive integer values
-# For the calculation
+# It makes the assumption that the user is inputting positive or negative integer values
 
 print ('Welcome to Equations\n')
 name = input('Enter your name: ')
