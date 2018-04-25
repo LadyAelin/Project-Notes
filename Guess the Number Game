@@ -1,0 +1,27 @@
+# This is a simple program that gets the user input and sets parameters for what the number is and then prints it out.
+# Should the user input a number that is not what the program wants (range of 1-10), the program will continue to execute
+# Should the user input a number that is what the program wants, then the program ends
+
+
+
+
+print ('Welcome to Guess the Number')
+
+name = input('What is your name: ')
+print ("Hi ", name)
+type(name)
+
+while True:
+    try:
+        number = int(input('what number am I thinking of\n'))
+    except ValueError:
+        continue
+    else:
+        if not 1 <= number <= 10:
+        
+            continue
+    break
+    
+
+
+   
