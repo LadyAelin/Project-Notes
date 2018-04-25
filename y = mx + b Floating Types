@@ -1,5 +1,5 @@
 # This is a simple program that calculates the linear function for floating type variables
-# It's sole purpose is designed for decimal values
+# It's sole purpose is designed for decimal values. It will also calculate the negative decimal values
 
 
 print ('Welcome to Equations\n')
