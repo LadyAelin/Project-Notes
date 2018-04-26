@@ -1,5 +1,6 @@
-#This program will allow for negative inputs in b and a
-#This program will not allow for negative float input in c
+# The following program calculates the quadratic formula
+# This program will allow for negative inputs in b and a
+# This program will not allow for negative float input in c
 # A math eror will occur and the program will not calculate
 # the quadratic Equation. Please see the below note as well on
 # imaginary numbers
