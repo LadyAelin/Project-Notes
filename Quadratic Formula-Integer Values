@@ -52,7 +52,7 @@ print ('Top Result/ 2a = ', Bottom)
 
 DIV= ADD / Bottom
 print ('x1= -b + (sqrt (b^2-4ac) / 2a\n ')
-print ('x1= \n', DIV)
+print ('x1=', DIV)
 print ('End of Calculation for x1\n')
 
 #The below program is the duplicate of the above program with the exception
@@ -85,5 +85,5 @@ print ('Top Result/= 2a', Bottom1)
 
 DIV1 = ADD / Bottom1
 print ('x2= -b - (sqrt (b^2-4ac) / 2a\n')
-print('x2 =\n', DIV1)
+print('x2 =', DIV1)
 print('End of Calculation for x2')
