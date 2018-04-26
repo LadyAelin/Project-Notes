@@ -34,7 +34,6 @@ print ("-4ac =", A)
 BAC = B + A
 print ('b^2 - 4ac =', BAC)
 
-
 # Here I need to assign a value that can take square root of BAC
 
 import math
