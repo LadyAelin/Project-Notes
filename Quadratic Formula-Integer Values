@@ -1,13 +1,14 @@
 # The following program calculates the quadratic formula
-# It is a work in progress
-
+# Please use at your own discretion: It only works with positive integer values or
+# With one negative integer value to cancel out the positive value
+# It has been tested and it works for basic user input
 
 print ('Welcome to Equation x= (-b)+/-(sqrt (b^2-4ac)) / 2a \n')
 name = input('Enter your name: ')
 type(name)
 print ("Hi", name)
 
-print ('Formula 1= -b + (sqrt (b^2-4ac) / 2a\n')
+print ('x1= -b + (sqrt (b^2-4ac) / 2a\n')
 
 # Below user input sets the precedence as to what will be calculated
 
@@ -23,19 +24,27 @@ type(c)
 B= b**2
 print ("b = ", B)
 
-print ('Remainder -b + (sqrt (-4ac)) / 2a')
-
 A = -4 * (a * c)
 print ("-4ac =", A)
-
-print ('Remainder -b + (sqrt) / 2a')
 
 BAC = B + A
 print ('b^2 - 4ac =', BAC)
 
-print ('Remainder -b + (sqrt) / 2a')
 
 # Here I need to assign a value that can take square root of BAC
 
 import math
-print (math.sqrt(BAC))
+print ('sqrt (b^2 -4ac) = ', math.sqrt(BAC))
+
+# need to call the square root function below
+
+ADD = -b + math.sqrt(BAC)
+print ('b + sqrt = ', ADD)
+
+# after calculating the result, it is time to divide by 2a
+
+Bottom = 2 * a
+print ('Top Result/ 2a = ', Bottom)
+
+DIV= ADD / Bottom
+print ('x1 = ', DIV)
