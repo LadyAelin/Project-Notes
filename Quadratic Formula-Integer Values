@@ -1,7 +1,11 @@
 # The following program calculates the quadratic formula
-# Please use at your own discretion: It only works with positive integer values or
-# With one negative integer value to cancel out the positive value
-# It has been tested and it works for basic user input
+# This program will allow for negative integer inputs in b and a
+# This program will not allow for negative integer input in c
+# A math eror will occur and the program will not calculate
+# the quadratic equation. Please see the explanation on lines 56-60
+# Regarding imaginary numbers
+# This program is not intended for floating point values. 
+# Please see a separate project
 
 print ('Welcome to Equation x= (-b)+/-(sqrt (b^2-4ac)) / 2a \n')
 name = input('Enter your name: ')
@@ -47,4 +51,39 @@ Bottom = 2 * a
 print ('Top Result/ 2a = ', Bottom)
 
 DIV= ADD / Bottom
-print ('x1 = ', DIV)
+print ('x1= -b + (sqrt (b^2-4ac) / 2a\n ')
+print ('x1= \n', DIV)
+print ('End of Calculation for x1\n')
+
+#The below program is the duplicate of the above program with the exception
+# that it calculates for the second portion of the quadratic formual dealing with
+# The negative value. Please note that a math error will occur should the user
+# initially input a number that is negative in nature for the program below
+# the square root of a negative number is imaginary i
+
+print ('x2= -b - (sqrt (b^2-4ac) / 2a\n')
+
+
+B1=  b **2
+print ("b=  ", B1)
+
+AC1 = -4 * (a * c)
+print ("-4ac= ", AC1)
+
+BAC1 = B1 + AC1
+
+import math
+
+print ('sqrt (b^2-4ac)=', math.sqrt(BAC1))
+
+ADD = -b - math.sqrt(BAC1)
+
+print ('-b - sqrt=', ADD)
+
+Bottom1 = 2 * a
+print ('Top Result/= 2a', Bottom1)
+
+DIV1 = ADD / Bottom1
+print ('x2= -b - (sqrt (b^2-4ac) / 2a\n')
+print('x2 =\n', DIV1)
+print('End of Calculation for x2')
