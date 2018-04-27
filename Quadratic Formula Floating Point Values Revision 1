@@ -6,7 +6,7 @@
 # Please note that you can simply use this code to also calculate for
 # integer types as well as floating type values
 # This revision includes a termination of the code should the user input an imaginary number
-# This is a work in progress
+# This is a work in progress that will be improved upon to really do operations with imaginary numbers
 
 print ('Welcome to Equation x= (-b)+/-(sqrt (b^2-4ac)) / 2a \n')
 name = input('Enter your name: ')
