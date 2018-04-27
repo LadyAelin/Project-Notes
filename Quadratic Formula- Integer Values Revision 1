@@ -1,0 +1,122 @@
+#This program will allow for negative inputs in b and a
+#This program will not allow for negative integer input in c
+# A math eror will occur and the program will not calculate
+# the quadratic Equation. Please see the below note as well on
+# imaginary numbers
+# This revision includes a termination of the code should the user input an imaginary number
+# It also has some potential fixes to actually using imaginary numbers (see comments in triple quotes)
+
+print ('Welcome to Equation x= (-b)+/-(sqrt (b^2-4ac)) / 2a \n')
+name = input('Enter your name: ')
+type(name)
+print ("Hi", name)
+
+print ('x1= -b + (sqrt (b^2-4ac) / 2a\n')
+
+import cmath
+import sys
+
+# Below user input sets the precedence as to what will be calculated
+
+b = int(input('Input b:\n'))
+type(b)
+
+a = int(input('Input a:\n'))
+type(a)
+
+if (a > 0):
+    print ('Input a: is imaginary' ) # added if else to check user input
+    imarin1 = a + complex()
+    print ("", imarin1)
+    print("Exit Code\n")
+    raise SystemExit
+    
+c= int(input('Input c:\n'))
+type(c)
+
+
+B= b**2
+print ("b = ", B)
+
+A = -4 * (a * c)    #add if else here
+print ("-4ac =", A) 
+
+'''
+if (A < 0):
+    squirt = -4 * (imarin1 * c)
+else:
+   A = -4 * (a * c) 
+print ("-4ac =", A)
+'''
+
+BAC = B + A # add if else here
+
+print ('b^2 - 4ac =', BAC)
+
+'''
+if (BAC < 0):
+    another = B + squirt
+else:
+    print ('b^2 - 4ac =', BAC)
+'''
+
+# Here I need to assign a value that can take square root of BAC
+
+import math  # add if else here
+
+print ('sqrt (b^2 -4ac) = ', math.sqrt(BAC))
+
+'''
+if (BAC > 0):
+    print('sqrt (b^2 -4ac) =', math.sqrt(another))
+else:
+    print ('sqrt (b^2 -4ac) = ', math.sqrt(BAC))
+'''
+
+# need to call the square root function below
+
+ADD = -b + math.sqrt(BAC)
+print ('b + sqrt = ', ADD)
+
+# after calculating the result, it is time to divide by 2a
+
+Bottom = 2 * a
+print ('Top Result/ 2a = ', Bottom)
+
+DIV= ADD / Bottom
+print ('x1= -b + (sqrt (b^2-4ac) / 2a\n ')
+print ('x1=', DIV)
+print ('End of Calculation for x1\n')
+
+#The below program is the duplicate of the above program with the exception
+# that it calculates for the second portion of the quadratic formual dealing with
+# The negative value. Please note that a math error will occur should the user
+# initially input a number that is negative in nature for the program below
+# the square root of a negative number is imaginary i
+
+print ('x2= -b - (sqrt (b^2-4ac) / 2a\n')
+
+
+B1=  b **2
+print ("b=  ", B1)
+
+AC1 = -4 * (a * c)
+print ("-4ac= ", AC1)
+
+BAC1 = B1 + AC1
+
+import math
+
+print ('sqrt (b^2-4ac)=', math.sqrt(BAC1))
+
+ADD = -b - math.sqrt(BAC1)
+
+print ('-b - sqrt=', ADD)
+
+Bottom1 = 2 * a
+print ('Top Result/= 2a', Bottom1)
+
+DIV1 = ADD / Bottom1
+print ('x2= -b - (sqrt (b^2-4ac) / 2a\n')
+print('x2 =', DIV1)
+print('End of Calculation for x2')
