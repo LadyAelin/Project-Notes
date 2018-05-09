@@ -27,3 +27,37 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+//another attempt try to fix
+
+#include <stdio.h>
+
+int main()
+{
+    //char nME_1 [100];
+    char x = 'B';
+    char user_c;
+    printf("Welcome to Guess the Word\n");
+    //printf("Enter your name:\n");
+   // scanf("%s", &nME_1);
+    //printf("Hi %s\n", nME_1);
+    printf("What is the first letter that I am thinking of?\n");
+    scanf("%c", &user_c);
+    printf("you entered: %c \n", user_c);
+    do 
+    {
+        printf("Try again");
+    }
+    while (user_c != x);
+    
+    
+    
+
+    return 0;
+}
+
