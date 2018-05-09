@@ -11,3 +11,29 @@ int main()
 
     return 0;
 }
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    char word [100000]; 
+    int YN;
+    printf("Input any word:\n");
+    scanf( "%s", &word);
+    printf("Your word is: %s\n", word);
+    printf("Is that correct: Yes= 1, N0= 0?\n");
+    scanf("%d", &YN);
+   // printf("You entered %d\n", YN);
+    if (YN > 0)
+    {
+        printf("You entered Yes\n");
+    }
+    else 
+    {
+        printf("You entered No\n");    
+    }
+
+    return 0;
+}
