@@ -1,0 +1,38 @@
+/*The program below will calculate y = mx + b for both floating and integer type values.
+ *if you wish to use only integer types, please focus on the first code
+ *if you wish to use both integer and floating types or floating types only 
+ *please focus on code #2. the lesson learned here is that floating type values 
+ * are more flexible in terms of holding integer type values even more so than
+ *integer types. It allows for transparency.
+*/ 
+
+
+#include <stdio.h>
+
+int main()
+{
+ //code #1: the code below is designed for integer type values only
+  int m, x, b; //assignment of integer values
+  int pro_D, su_M;
+  printf("Formula y= mx+b\n");
+  printf("Enter your integer values for m, x, b, on one line in order\n");
+  scanf("%d%d%d", &m, &x, &b);
+  pro_D = m * x;
+  su_M = pro_D + b;
+  printf("Y = %d\n", su_M);
+ 
+ //code #2: the code below will calculate any integer or floating type value
+  float m_1, x_1, b_1; //assignment of floating type values.
+  float prD_1, SUM_1;
+  printf("Enter your floating type or integer type values for m,x,b, on one line in order\n");
+  scanf("%f%f%f", &m_1, &x_1, &b_1);
+  prD_1 = m_1 * x_1;
+  SUM_1 = prD_1 + b_1;
+  printf("Y = %f\n", SUM_1); 
+  
+  
+  
+    
+
+    return 0;
+}
