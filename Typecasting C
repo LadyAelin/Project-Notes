@@ -1,0 +1,31 @@
+// The following program takes two values: integer and float and conducts basic arithmetic
+// it typecasts the integer value so that it can be used with the floating point value
+// This is is the way to ensure that the int value is not lost while the basic calculations are
+// being conducted
+
+#include <stdio.h>
+
+int main()
+{
+    int num_1;
+    float num_2;
+    float sum;
+    printf("Enter any integer value and floating point value on one line: \n");
+    scanf("%d%f", &num_1, &num_2);
+    printf("You entered %d and %f\n", num_1, num_2);
+    sum = (float)num_1 + num_2;  //typecast used on int. converted to float
+    printf("Sum = %f\n", sum);   //no value is lost when type int is typcast into type float
+    float sub_1;
+    sub_1 = (float) num_1 - num_2;
+    printf("Subtraction = %f\n", sub_1);
+    float div_1;
+    div_1 = (float) num_1 / num_2;
+    printf("Division = %f\n", div_1);
+    float prod_1;
+    prod_1 = (float) num_1 * num_2;
+    printf("Product = %f", prod_1);
+ 
+    
+
+    return 0;
+}
