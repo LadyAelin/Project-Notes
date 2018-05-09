@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    char word [100000]; 
+    printf("Input any word:\n");
+    scanf( "%s", &word);
+    printf("Your word is: %s\n", word);
+    int i = atoi(word); //atoi here only reads numbers. It does not read words. keep in mind for future reference
+    printf("The value entered is: %d", i);
+
+    return 0;
+}
