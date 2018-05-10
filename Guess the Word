@@ -28,3 +28,53 @@ int main()
 
     return 0;
 }
+
+
+//alternative to include other inputs and outputs using else if
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //char nME_1 [100];
+    char x = 'B';
+    char user_c;
+    printf("Welcome to Guess the Word\n");
+    //printf("Enter your name:\n");
+    // scanf("%s", &nME_1);
+    //printf("Hi %s\n", nME_1);
+    printf("What is the first letter that I am thinking of in capital letters?\n");
+    scanf("%c", &user_c);
+    printf("You entered: %c \n", user_c);
+   if (user_c != x)
+   {
+       printf("Try again\n");
+       exit(0); //use of exit to terminate program mid way through game
+   }
+   else 
+   {
+    char y = 'A';
+    char user_c1;   
+    printf("What is the second letter that I am thinking of in capital letters?\n");
+    scanf("%c", &user_c1);
+    printf("You entered: %c", user_c1);
+   
+   if (user_c1 != y) 
+   {
+       printf("Try again\n");
+       exit(0);
+   }
+   else 
+   {
+       printf("You win!\n");
+   }
+   }
+   
+   
+   
+   
+    return 0;
+}
+
