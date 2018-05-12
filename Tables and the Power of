@@ -1,0 +1,33 @@
+/*
+ *Rebeka Henry U07971106
+ *rebek.henry7@gmail.com
+ *4/28/18
+ *C1A3E1_main.c
+ *Win7
+ *Code Blocks 17.12
+ *C Program
+ *The following program takes the user input,
+ *uses a for loop to display the input from 0
+ *to the number that the user inputted,
+ *and then calculates the exponent of each number
+ *to the power of 7 or 8. It also displays this information
+ *in three right justified columns.
+ *If the user inputs a number that exceeds the machine's capability,
+ *the suggestion to increase the range would be to use long in the
+ *program since you would no longer be dealing with integer types
+ */
+#include <stdio.h>
+int main(void)
+{
+    int exp_1, exp_2;
+    printf("Enter an integer value >= 0\n");
+    scanf("%d", &exp_1);
+    printf("   n             n^7      n^8\n   --------------------------\n");
+    for (exp_2 = 0; exp_2 <= exp_1; exp_2++)                                //loop to take input and repeat
+    {
+        int exp_7 = exp_2 * exp_2 * exp_2 * exp_2 * exp_2 * exp_2 * exp_2;  //taking the power of 7 and 8
+        int exp_8 = exp_7 * exp_2;
+        printf("%4d%12d %12d\n", exp_2, exp_7, exp_8);                      //%4d & %12d to justify columns
+    }
+    return 0;
+}
