@@ -1,0 +1,73 @@
+/*
+ *Rebeka Henry U07971106
+ *rebek.henry7@gmail.com
+ *5/3/18
+ *C1A4E1_main.c
+ *Win7
+ *Code Blocks 17.12
+ *C Program
+ *This program passes the max and min functions to
+ *two decimal numeric values that the user inputs and
+ *returns the max or min of the two values
+ */
+#include <stdio.h>
+double ComputeMinimum(double para_1, double para_2);      //functions that will be called below
+double ComputeMaximum(double val_1, double val_2);        //functions that will be called below
+int main(void)
+{
+    double user_D1, user_D2, call_1, call_2;              //call_1 and call_2 to be used for max and min
+    printf("Enter any space separated pair of decimal numeric values on the same line\n");
+    scanf("%lf%lf", &user_D1, &user_D2);
+    call_1 = ComputeMinimum(user_D1, user_D2);            //passing user input to function min
+    call_2 = ComputeMaximum(user_D1, user_D2);            //passing user input to function max
+    printf("ComputeMinimum (%f, %f) returned %f\n", user_D1, user_D2, call_1);
+    printf("ComputeMaximum (%f, %f) returned %f", user_D1, user_D2, call_2);
+    
+    
+    
+    
+    
+ /*The below code corresponds to the functions being called into the above program
+ They exist in separate files that contain the max and min functions
+ */
+    
+ /*Compute Minimum  */  
+ /*
+ *Rebeka Henry U07971106
+ *rebek.henry7@gmail.com
+ *5/3/18
+ *C1A4E1_ComputeMinimum.c
+ *Win7
+ *Code Blocks 17.12
+ *C Program
+ *This program contains the ternary conditional operator
+ *in order to compute the minimum value of a type double
+ *it does not display anything. It stores two formal parameters
+ *as type double and returns type double.
+ */
+double ComputeMinimum(double para_1, double para_2)
+{
+    return para_1 < para_2 ? para_1 : para_2;
+}
+
+
+
+/*Compute Maximum*/
+
+/*
+ *Rebeka Henry U07971106
+ *rebek.henry7@gmail.com
+ *5/3/18
+ *C1A4E1_ComputeMaximum.c
+ *Win7
+ *Code Blocks 17.12
+ *C Program
+ *This program contains the ternary conditional operator
+ *in order to compute the maximum value of a type double
+ *it does not display anything. It stores two formal parameters
+ *as type double and returns type double.
+ */
+double ComputeMaximum(double val_1, double val_2)
+{
+    return val_1 > val_2 ? val_1 : val_2;
+}
