@@ -1,0 +1,24 @@
+/*
+ *Rebeka Henry U07971106
+ *rebek.henry7@gmail.com
+ *4/29/18
+ *C1A3E2_main.cpp
+ *Win7
+ *Code Blocks 17.12
+ *C++ Program
+ *This is a program that asks for the user input value and
+ *reverses it. If the user inputs a negative number, it is converted
+ *into a positive number temporarily for the reversal
+ */
+#include <iostream>
+using namespace std;
+const int OPERATE_M = 10;
+const int POS_N = 2;
+int main()
+{
+    int userf, reversed_N = 0;
+    cout << "Enter any decimal integer value\n";
+    cin >> userf;
+    int tmp = userf;           //stored user value in tmp in order to conduct the reversal. Userf is in tact
+    do
+    {
