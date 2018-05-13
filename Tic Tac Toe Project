@@ -1,0 +1,116 @@
+/*in progress! */
+#include <stdio.h>
+#include <stdlib.h>
+
+//This is an attempt at Tic Tac Toe.
+//It needs a display window
+
+int main()
+{
+    char user_IN;
+    printf("Welcome to TIC TAC TOE\n");
+    printf("The rules are simple. Pick x or o\n");
+    scanf("%c", &user_IN);
+    printf("You chose: %c\n", user_IN);
+    char x_1 = user_IN;        //lines 12 to 20 initialize each section of the table
+    char x_2 = user_IN;        //x_1 to x_5 will be for user input only
+    char x_3 = user_IN;
+    char x_4 = user_IN;
+    char x_5 = user_IN;
+    char x_6;       //x_6 to x_9 will be for the program
+    char x_7;
+    char x_8;
+    char x_9;
+
+    printf(" 1 | 2 | 3\n");
+    printf("--------\n");
+    printf(" 4 | 5 | 6\n");
+    printf("--------\n");
+    printf(" 7 | 8 | 9\n ");
+
+    printf("\nFrom the table above,\n");
+    printf("choose from 1-9 where\n");
+    printf("you want your %c to go\n", user_IN);
+    printf("and it will be displayed below\n");
+    printf("You get five tries. Choose wisely!\n");
+
+    int constant_num1;
+    int num_1;
+    int num_2;
+    int num_3;
+    int num_4;
+    int num_5;
+    printf("\nWhat is your first number?\n");
+    scanf("%d", &num_1);
+
+    switch(constant_num1){
+        case 1:
+            printf("\n %c |  | \n", user_IN); //need to display this somehow figure it out
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 2:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 3:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 4:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 5:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 6:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 7:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 8:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+        case 9:
+            printf("\n  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n");
+            printf("--------\n");
+            printf("  |  | \n ");
+    }
+
+    //char open_1;  --> use this for later display on the table
+    //while (x_1 != open_1)
+
+
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n ");
+
+
+
+    return 0;
+}
