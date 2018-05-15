@@ -18,20 +18,19 @@ int main()
     //if input = o, then program = x
     //may need a nested conditional statement
 
-    // setting the rules of the game below. fix it
+    // setting the rules of the game below
     
-    if (user_IN = 'x')
+    if (user_IN != 'x')
     {
-        printf("program = o\n");
-    }
-    else if (user_IN = 'o')
-    {
-        printf("program = x\n");
+        char prog = 'x';
+        printf("program = %c\n", prog);
     }
     else 
     {
-        printf("invalid input\n");
+        char prog_1 = 'o';
+        printf("program = %c\n", prog_1);
     }
+    
     printf(" 1 | 2 | 3\n");
     printf("--------\n");
     printf(" 4 | 5 | 6\n");
@@ -53,10 +52,178 @@ int main()
     scanf("%d", &num_1);
     printf("number 1 = %d", num_1);
     
+    //this if else code here can be used to display the
+    //program input we well as the user input depending
+    // on if the user input was x or o. This is where
+    //we will use a nested conditional statement
+    if (user_IN != 'x')
+    {
+        char prog = 'x';
+        printf("\nprogram = %c\n", prog);
     // if else if else checks the first number entered 
     // and displays the character that the user 
     //entered below in that corresponding space
-    if (num_1 <= 1) 
+    if (num_1 <= 1)  //try #1
+    {
+           printf("\n %c |  | \n", user_IN);
+           printf("--------\n");
+           printf("  | %c | \n", prog);
+           printf("--------\n");
+           printf("  |  | \n ");
+        
+    }
+    else if (num_1 <=2)
+    {
+    printf("\n  | %c | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 3) {
+    printf("\n  |  | %c \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n ");
+        
+    }
+    else if (num_1 <= 4)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" %c |  | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 5)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" | %c | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 6)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf("  |  | %c \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 7)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf(" %c |  | \n ", user_IN);
+    }
+    else if (num_1 <= 8)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf("  | %c | \n ", user_IN);
+    }
+    else 
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf("  |  | %c \n", user_IN);
+    }
+    }
+    else 
+    {
+        char prog_1 = 'o';
+        printf("\nprogram = %c\n", prog_1);
+         // if else if else checks the first number entered 
+    // and displays the character that the user 
+    //entered below in that corresponding space
+    if (num_1 <= 1)  //try #1
+    {
+           printf("\n %c |  | \n", user_IN);
+           printf("--------\n");
+           printf("  | %c | \n", prog_1);
+           printf("--------\n");
+           printf("  |  | \n ");
+        
+    }
+    else if (num_1 <=2)
+    {
+    printf("\n  | %c | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 3) {
+    printf("\n  |  | %c \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n ");
+        
+    }
+    else if (num_1 <= 4)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" %c |  | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 5)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" | %c | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 6)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf("  |  | %c \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 7)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf(" %c |  | \n ", user_IN);
+    }
+    else if (num_1 <= 8)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf("  | %c | \n ", user_IN);
+    }
+    else 
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf("  |  | %c \n", user_IN);
+    }
+    
+    }
+    
+   /* // if else if else checks the first number entered 
+    // and displays the character that the user 
+    //entered below in that corresponding space
+    if (num_1 <= 1)  //try #1
     {
            printf("\n %c |  | \n", user_IN);
            printf("--------\n");
@@ -129,6 +296,7 @@ int main()
     printf("--------\n");
     printf("  |  | %c \n", user_IN);
     }
+    */
         
     
    
