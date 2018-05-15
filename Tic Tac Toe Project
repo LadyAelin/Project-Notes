@@ -34,7 +34,6 @@ int main()
     printf("and it will be displayed below\n");
     printf("You get five tries. Choose wisely!\n");
 
-    int constant_num1;
     int num_1;
     int num_2;
     int num_3;
@@ -43,62 +42,7 @@ int main()
     printf("\nWhat is your first number?\n");
     scanf("%d", &num_1);
 
-    switch(constant_num1){
-        case 1:
-            printf("\n %c |  | \n", user_IN); //need to display this somehow figure it out
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 2:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 3:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 4:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 5:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 6:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 7:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 8:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-        case 9:
-            printf("\n  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n");
-            printf("--------\n");
-            printf("  |  | \n ");
-    }
+   
 
     //char open_1;  --> use this for later display on the table
     //while (x_1 != open_1)
