@@ -12,17 +12,26 @@ int main()
     printf("The rules are simple. Pick x or o\n");
     scanf("%c", &user_IN);
     printf("You chose: %c\n", user_IN);
-    /*char x_1 = user_IN;        //lines 12 to 20 initialize each section of the table
-    char x_2 = user_IN;        //x_1 to x_5 will be for user input only
-    char x_3 = user_IN;
-    char x_4 = user_IN;
-    char x_5 = user_IN;
-    char x_6;       //x_6 to x_9 will be for the program
-    char x_7;
-    char x_8; // please note that this initialization may not be necessary for my program
-    char x_9; // this is why it is commented out
-    */
+   
+    //need to check the user input of x or o
+    //if input = x, then program = o
+    //if input = o, then program = x
+    //may need a nested conditional statement
 
+    // setting the rules of the game below. fix it
+    
+    if (user_IN = 'x')
+    {
+        printf("program = o\n");
+    }
+    else if (user_IN = 'o')
+    {
+        printf("program = x\n");
+    }
+    else 
+    {
+        printf("invalid input\n");
+    }
     printf(" 1 | 2 | 3\n");
     printf("--------\n");
     printf(" 4 | 5 | 6\n");
@@ -44,6 +53,9 @@ int main()
     scanf("%d", &num_1);
     printf("number 1 = %d", num_1);
     
+    // if else if else checks the first number entered 
+    // and displays the character that the user 
+    //entered below in that corresponding space
     if (num_1 <= 1) 
     {
            printf("\n %c |  | \n", user_IN);
@@ -62,7 +74,7 @@ int main()
     printf("  |  | \n ");
     }
     else if (num_1 <= 3) {
-    printf("\n  | | %c \n", user_IN);
+    printf("\n  |  | %c \n", user_IN);
     printf("--------\n");
     printf("  |  | \n");
     printf("--------\n");
