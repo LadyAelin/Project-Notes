@@ -12,15 +12,16 @@ int main()
     printf("The rules are simple. Pick x or o\n");
     scanf("%c", &user_IN);
     printf("You chose: %c\n", user_IN);
-    char x_1 = user_IN;        //lines 12 to 20 initialize each section of the table
+    /*char x_1 = user_IN;        //lines 12 to 20 initialize each section of the table
     char x_2 = user_IN;        //x_1 to x_5 will be for user input only
     char x_3 = user_IN;
     char x_4 = user_IN;
     char x_5 = user_IN;
     char x_6;       //x_6 to x_9 will be for the program
     char x_7;
-    char x_8;
-    char x_9;
+    char x_8; // please note that this initialization may not be necessary for my program
+    char x_9; // this is why it is commented out
+    */
 
     printf(" 1 | 2 | 3\n");
     printf("--------\n");
@@ -41,18 +42,84 @@ int main()
     int num_5;
     printf("\nWhat is your first number?\n");
     scanf("%d", &num_1);
-
-   
-
-    //char open_1;  --> use this for later display on the table
-    //while (x_1 != open_1)
-
-
-    printf("\n  |  | \n");
+    printf("number 1 = %d", num_1);
+    
+    if (num_1 <= 1) 
+    {
+           printf("\n %c |  | \n", user_IN);
+           printf("--------\n");
+           printf("  |  | \n");
+           printf("--------\n");
+           printf("  |  | \n ");
+        
+    }
+    else if (num_1 <=2)
+    {
+    printf("\n  | %c | \n", user_IN);
     printf("--------\n");
     printf("  |  | \n");
     printf("--------\n");
     printf("  |  | \n ");
+    }
+    else if (num_1 <= 3) {
+    printf("\n  | | %c \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n");
+    printf("--------\n");
+    printf("  |  | \n ");
+        
+    }
+    else if (num_1 <= 4)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" %c |  | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 5)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" | %c | \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 6)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf("  |  | %c \n", user_IN);
+    printf("--------\n");
+    printf("  |  | \n ");
+    }
+    else if (num_1 <= 7)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf(" %c |  | \n ", user_IN);
+    }
+    else if (num_1 <= 8)
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf("  | %c | \n ", user_IN);
+    }
+    else 
+    {
+    printf("\n  |  | \n");
+    printf("--------\n");
+    printf(" |  | \n");
+    printf("--------\n");
+    printf("  |  | %c \n", user_IN);
+    }
+        
+    
+   
 
 
 
