@@ -18,7 +18,7 @@ int main()
     printf("Enter the diameter\n");
     scanf("%f", &d);
     prod = d / 2;
-    printf("r = %f", prod);
+    printf("r = %f\n", prod);
     c = 2 * PIE * prod;
     printf("C = %f", c);
     
