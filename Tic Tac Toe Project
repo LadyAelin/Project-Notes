@@ -65,16 +65,16 @@ int main()
     //entered below in that corresponding space
     if (num_1 <= 1)  //try #1
     {
-           printf("\n %c |  | \n", user_IN);
+           printf("\n %c | %c | \n", user_IN, prog);
            printf("--------\n");
-           printf("  | %c | \n", prog);
+           printf("  |  | \n");
            printf("--------\n");
-           printf("  |  | \n ");
+           printf("  |  | \n");
         
     }
     else if (num_1 <=2)
     {
-    printf("\n  | %c | \n", user_IN);
+    printf("\n %c | %c | \n", user_IN, prog);
     printf("--------\n");
     printf("  |  | \n");
     printf("--------\n");
@@ -83,18 +83,18 @@ int main()
     else if (num_1 <= 3) {
     printf("\n  |  | %c \n", user_IN);
     printf("--------\n");
-    printf("  |  | \n");
+    printf(" %c |  | \n", prog);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  |  | \n");
         
     }
     else if (num_1 <= 4)
     {
     printf("\n  |  | \n");
     printf("--------\n");
-    printf(" %c |  | \n", user_IN);
+    printf(" %c | %c | \n", user_IN, prog);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  |  | \n");
     }
     else if (num_1 <= 5)
     {
@@ -102,7 +102,7 @@ int main()
     printf("--------\n");
     printf(" | %c | \n", user_IN);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf(" %c |  | \n", prog);
     }
     else if (num_1 <= 6)
     {
@@ -110,7 +110,7 @@ int main()
     printf("--------\n");
     printf("  |  | %c \n", user_IN);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  | %c | \n", prog);
     }
     else if (num_1 <= 7)
     {
@@ -118,15 +118,15 @@ int main()
     printf("--------\n");
     printf(" |  | \n");
     printf("--------\n");
-    printf(" %c |  | \n ", user_IN);
+    printf(" %c |  | %c\n", user_IN, prog);
     }
     else if (num_1 <= 8)
     {
     printf("\n  |  | \n");
     printf("--------\n");
-    printf(" |  | \n");
+    printf(" | %c | \n", prog);
     printf("--------\n");
-    printf("  | %c | \n ", user_IN);
+    printf("  | %c | \n", user_IN);
     }
     else 
     {
@@ -146,115 +146,36 @@ int main()
     //entered below in that corresponding space
     if (num_1 <= 1)  //try #1
     {
-           printf("\n %c |  | \n", user_IN);
-           printf("--------\n");
-           printf("  | %c | \n", prog_1);
-           printf("--------\n");
-           printf("  |  | \n ");
-        
-    }
-    else if (num_1 <=2)
-    {
-    printf("\n  | %c | \n", user_IN);
-    printf("--------\n");
-    printf("  |  | \n");
-    printf("--------\n");
-    printf("  |  | \n ");
-    }
-    else if (num_1 <= 3) {
-    printf("\n  |  | %c \n", user_IN);
-    printf("--------\n");
-    printf("  |  | \n");
-    printf("--------\n");
-    printf("  |  | \n ");
-        
-    }
-    else if (num_1 <= 4)
-    {
-    printf("\n  |  | \n");
-    printf("--------\n");
-    printf(" %c |  | \n", user_IN);
-    printf("--------\n");
-    printf("  |  | \n ");
-    }
-    else if (num_1 <= 5)
-    {
-    printf("\n  |  | \n");
-    printf("--------\n");
-    printf(" | %c | \n", user_IN);
-    printf("--------\n");
-    printf("  |  | \n ");
-    }
-    else if (num_1 <= 6)
-    {
-    printf("\n  |  | \n");
-    printf("--------\n");
-    printf("  |  | %c \n", user_IN);
-    printf("--------\n");
-    printf("  |  | \n ");
-    }
-    else if (num_1 <= 7)
-    {
-    printf("\n  |  | \n");
-    printf("--------\n");
-    printf(" |  | \n");
-    printf("--------\n");
-    printf(" %c |  | \n ", user_IN);
-    }
-    else if (num_1 <= 8)
-    {
-    printf("\n  |  | \n");
-    printf("--------\n");
-    printf(" |  | \n");
-    printf("--------\n");
-    printf("  | %c | \n ", user_IN);
-    }
-    else 
-    {
-    printf("\n  |  | \n");
-    printf("--------\n");
-    printf(" |  | \n");
-    printf("--------\n");
-    printf("  |  | %c \n", user_IN);
-    }
-    
-    }
-    
-   /* // if else if else checks the first number entered 
-    // and displays the character that the user 
-    //entered below in that corresponding space
-    if (num_1 <= 1)  //try #1
-    {
-           printf("\n %c |  | \n", user_IN);
+          printf("\n %c | %c | \n", user_IN, prog_1);
            printf("--------\n");
            printf("  |  | \n");
            printf("--------\n");
-           printf("  |  | \n ");
+           printf("  |  | \n");
         
     }
     else if (num_1 <=2)
     {
-    printf("\n  | %c | \n", user_IN);
+    printf("\n %c | %c | \n", user_IN, prog_1);
     printf("--------\n");
     printf("  |  | \n");
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  |  | \n");
     }
     else if (num_1 <= 3) {
     printf("\n  |  | %c \n", user_IN);
     printf("--------\n");
-    printf("  |  | \n");
+    printf(" %c |  | \n", prog_1);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  |  | \n");
         
     }
     else if (num_1 <= 4)
     {
     printf("\n  |  | \n");
     printf("--------\n");
-    printf(" %c |  | \n", user_IN);
+    printf(" %c | %c | \n", user_IN, prog_1);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  |  | \n");
     }
     else if (num_1 <= 5)
     {
@@ -262,7 +183,7 @@ int main()
     printf("--------\n");
     printf(" | %c | \n", user_IN);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf(" %c |  | \n", prog_1);
     }
     else if (num_1 <= 6)
     {
@@ -270,7 +191,7 @@ int main()
     printf("--------\n");
     printf("  |  | %c \n", user_IN);
     printf("--------\n");
-    printf("  |  | \n ");
+    printf("  | %c | \n", prog_1);
     }
     else if (num_1 <= 7)
     {
@@ -278,15 +199,15 @@ int main()
     printf("--------\n");
     printf(" |  | \n");
     printf("--------\n");
-    printf(" %c |  | \n ", user_IN);
+    printf(" %c |  | %c\n", user_IN, prog_1);
     }
     else if (num_1 <= 8)
     {
     printf("\n  |  | \n");
     printf("--------\n");
-    printf(" |  | \n");
+    printf(" | %c | \n", prog_1);
     printf("--------\n");
-    printf("  | %c | \n ", user_IN);
+    printf("  | %c | \n", user_IN);
     }
     else 
     {
@@ -296,8 +217,13 @@ int main()
     printf("--------\n");
     printf("  |  | %c \n", user_IN);
     }
-    */
-        
+    }
+    
+   //Try #2 to display the second user entered number
+   
+   printf("What is your second number?\n");
+   scanf("%d", &num_2);
+   printf("Number 2 = %d", num_2);
     
    
 
