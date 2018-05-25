@@ -1,0 +1,24 @@
+/*This is a very simple program that
+ *gets the user input of an integer, float, and dobule
+ *types and then prints it out. It also finds out the size of each
+ *data type
+*/
+# include <stdio.h>
+
+int main() {
+
+    int integerType;
+    float floatType;
+    double doubleType;
+    //Prompting the user
+    printf("Enter an integer, float, and double type all in one line:\n");
+    scanf("%d%f%f", &integerType, &floatType, &doubleType);
+    printf("Integer: %d\n", integerType);
+    printf("Float: %f\n", floatType);
+    printf("Double: %f\n", doubleType);
+    //Size of to find out the number of bytes
+    printf("Size of int: %ld bytes\n",sizeof(integerType));
+    printf("Size of float: %ld bytes\n",sizeof(floatType));
+    printf("Size of double: %ld bytes\n",sizeof(doubleType)); 
+    return 0;
+}
