@@ -1,0 +1,57 @@
+/*This is a program that calculates a tip to give at a restaurant
+ * depending on the level of satisfaction
+ *
+*/
+# include <stdio.h>
+
+int main() {
+
+    int rate_1;
+    float spend_1;
+    
+    printf("Tipping Calculator\n");
+    printf("Rate your service at a restaurant and see your tip option 1-10\n");
+    scanf("%d", &rate_1);
+    printf("How much did you spend:\n");
+    scanf("%f", &spend_1);
+    
+    if (rate_1 >= 9)
+    {
+        float x = 20.00;
+        float y = 100.00;
+        float Tip = x * spend_1;
+        float Total = Tip / y;
+        printf("Tip 20%\n");
+        printf("$%f \n", Total);
+        
+    }
+    
+    else if (rate_1 >= 7)
+    
+    {
+        float x_1 = 15.00;
+        float y_1 = 100.00;
+        float Tip_1 = x_1 * spend_1;
+        float Total_1 = Tip_1 / y_1;
+        printf("Tip 15%\n");
+        printf("%f \n", Total_1);
+    }
+    
+    else if (rate_1 >= 5)
+    
+    {
+        float x_2 = 10.00;
+        float y_2 = 100.00;
+        float Tip_2 = x_2 * spend_1;
+        float Total_2 = Tip_2 / y_2;
+        printf("Tip 10%\n");
+        printf("$%f ", Total_2);
+    }
+    else
+   {
+       printf("No Tip\n");
+   }
+   
+    
+    return 0;
+}
