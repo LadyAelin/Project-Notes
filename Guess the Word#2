@@ -1,0 +1,608 @@
+/* in Progress! */
+
+#include <stdio.h>
+#include <stdlib.h>
+//my word is Phenomenal
+int main()
+{
+    char word_1;//P
+    printf("Welcome to Guess the Word\n");
+    printf("You will get five guesses per word\n");
+    printf("What is the first letter that I am thinking of in CAPITAL letters?\n");
+    scanf("%c", &word_1);
+
+    switch(word_1)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("P_ _ _ _ _ _ _ _ _\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+
+    char word_2;
+    printf("What is the second letter?\n");
+    scanf("%c", &word_2);
+
+    switch(word_2)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("P H _ _ _ _ _ _ _ _\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_3;//E
+    printf("What is the third letter?\n");
+    scanf("%c", &word_3);
+    switch(word_3)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("P H E _ _ _ _ _ _ _ \n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_4;//N
+    printf("What is the fourth letter?\n");
+    scanf("%c", &word_4);
+     switch(word_4)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("P H E N _ _ _ _ _ _\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_5;//O
+    printf("What is the fifth letter?\n");
+    scanf("%c", &word_5);
+     switch(word_5)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("P H E N O _ _ _ _ _\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_6;//M
+    printf("What is the sixth letter?");
+    scanf("%c", &word_6);
+
+     switch(word_6)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("P H E N O M _ _ _ _\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+    char word_7;//E
+    printf("What is the seventh letter?\n");
+    scanf("%c", &word_7);
+
+     switch(word_7)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("P H E N O M E _ _ _\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_8;//N
+    printf("What is the eighth letter?\n");
+    scanf("%c", &word_8);
+     switch(word_8)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("P H E N O M E N _ _\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_9;//A
+    printf("What is the ninth letter?\n");
+    scanf("%c", &word_9);
+
+     switch(word_9)
+    {
+        case('A'): printf("P H E N O M E N A _\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("Try again\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+    char word_10;//L
+    printf("What is the tenth letter?\n");
+    scanf("%c", &word_10);
+
+     switch(word_10)
+    {
+        case('A'): printf("Try again\n");
+        break;
+        case('B'): printf("Try again\n");
+        break;
+        case('C'): printf("Try again\n");
+        break;
+        case('D'): printf("Try again\n");
+        break;
+        case('E'): printf("Try again\n");
+        break;
+        case('F'): printf("Try again\n");
+        break;
+        case('G'): printf("Try again\n");
+        break;
+        case('H'): printf("Try again\n");
+        break;
+        case('I'): printf("Try again\n");
+        break;
+        case('J'): printf("Try again\n");
+        break;
+        case('K'): printf("Try again\n");
+        break;
+        case('L'): printf("P H E N O M E N A L\n");
+        break;
+        case('M'): printf("Try again\n");
+        break;
+        case('N'): printf("Try again\n");
+        break;
+        case('O'): printf("Try again\n");
+        break;
+        case('P'): printf("Try again\n");
+        break;
+        case('Q'): printf("Try again\n");
+        break;
+        case('R'): printf("Try again\n");
+        break;
+        case('S'): printf("Try again\n");
+        break;
+        case('T'): printf("Try again\n");
+        break;
+        case('U'): printf("Try again\n");
+        break;
+        case('V'): printf("Try again\n");
+        break;
+        case('W'): printf("Try again\n");
+        break;
+        case('X'): printf("Try again\n");
+        break;
+        case('Y'): printf("Try again\n");
+        break;
+        case('Z'): printf("Try again\n");
+        break;
+    }
+
+
+    return 0;
+}
