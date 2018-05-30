@@ -1,0 +1,163 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*This is a simple program that tracks all of the user
+inputed items and then gets the total of all the items and their quantities*/
+
+int main()
+{
+    //set up of variables
+    char item_1[100];
+    int first_i;
+    float cost_1;
+
+    char item_2[100];
+    int second_i;
+    float cost_2;
+
+    char item_3[100];
+    int third_i;
+    float cost_3;
+
+    char item_4[100];
+    int fourth_i;
+    float cost_4;
+
+    char item_5[100];
+    int fifth_i;
+    float cost_5;
+
+    char item_6[100];
+    int sixth;
+    float cost_6;
+
+    char item_7[100];
+    int seventh_i;
+    float cost_7;
+
+    char item_8[100];
+    int eighth_i;
+    float cost_8;
+
+    char item_9[100];
+    int nineth_i;
+    float cost_9;
+
+    char item_10[100];
+    int tenth_i;
+    float cost_10;
+
+    char item_11[100];
+    int eleventh_i;
+    float cost_11;
+
+    char item_12[100];
+    int twelveth_i;
+    float cost_12;
+
+    char item_13[100];
+    int thirteenth_i;
+    float cost_13;
+
+    char item_14[100];
+    int fourteenth_i;
+    float cost_14;
+
+    char item_15[100];
+    int fifteenth_i;
+    float cost_15;
+
+    char item_16[100];
+    int sixteenth_i;
+    float cost_16;
+
+    char item_17[100];
+    int seventeenth_i;
+    float cost_17;
+
+    char item_18[100];
+    int eighteenth_i;
+    float cost_18;
+
+    char item_19[100];
+    int nineteenth_i;
+    float cost_19;
+
+    char item_20[100];
+    int twentieth_i;
+    float cost_20;
+
+    printf("INVENTORY MANAGEMENT SYSTEM 20 Items\n");
+    printf("Enter the name, quantity, and cost of each item on one line\n");
+    //prompting the user
+    scanf("%s%d%f", &item_1, &first_i, &cost_1);
+    scanf("%s%d%f", &item_2, &second_i, &cost_2);
+    scanf("%s%d%f", &item_3, &third_i, &cost_3);
+    scanf("%s%d%f", &item_4, &fourth_i, &cost_4);
+    scanf("%s%d%f", &item_5, &fifth_i, &cost_5);
+    scanf("%s%d%f", &item_6, &sixth, &cost_6);
+    scanf("%s%d%f", &item_7, &seventh_i, &cost_7);
+    scanf("%s%d%f", &item_8, &eighth_i, &cost_8);
+    scanf("%s%d%f", &item_9, &nineth_i, &cost_9);
+    scanf("%s%d%f", &item_10, &tenth_i, &cost_10);
+    scanf("%s%d%f", &item_11, &eleventh_i, &cost_11);
+    scanf("%s%d%f", &item_12, &twelveth_i, &cost_12);
+    scanf("%s%d%f", &item_13, &thirteenth_i, &cost_13);
+    scanf("%s%d%f", &item_14, &fourteenth_i, &cost_14);
+    scanf("%s%d%f", &item_15, &fifteenth_i, &cost_15);
+    scanf("%s%d%f", &item_16, &sixteenth_i, &cost_16);
+    scanf("%s%d%f", &item_17, &seventeenth_i, &cost_17);
+    scanf("%s%d%f", &item_18, &eighteenth_i, &cost_18);
+    scanf("%s%d%f", &item_19, &nineteenth_i, &cost_19);
+    scanf("%s%d%f", &item_20, &twentieth_i, &cost_20);
+
+    //Display of user input values
+    //Need: justify columns %02d %04d
+    printf("\nITEM    NAME      QUAN    COST\n");
+    printf("----------------------------------\n");
+    printf("#1      %s    %d     $%f\n", item_1, first_i, cost_1);
+    printf("----------------------------------\n");
+    printf("#2      %s    %d     $%f\n", item_2, second_i, cost_2);
+    printf("----------------------------------\n");
+    printf("#3      %s    %d     $%f\n", item_3, third_i, cost_3);
+    printf("----------------------------------\n");
+    printf("#4      %s    %d     $%f\n", item_4, fourth_i, cost_4);
+    printf("----------------------------------\n");
+    printf("#5      %s    %d     $%f\n", item_5, fifth_i, cost_5);
+    printf("----------------------------------\n");
+    printf("#6      %s    %d     $%f\n", item_6, sixth, cost_6);
+    printf("----------------------------------\n");
+    printf("#7      %s    %d     $%f\n",item_7, seventh_i, cost_7);
+    printf("----------------------------------\n");
+    printf("#8      %s    %d     $%f\n", item_8, eighth_i, cost_8);
+    printf("----------------------------------\n");
+    printf("#9      %s    %d     $%f\n", item_9, nineth_i, cost_9);
+    printf("----------------------------------\n");
+    printf("#10     %s    %d    $%f\n", item_10, tenth_i, cost_10);
+    printf("----------------------------------\n");
+    printf("#11     %s    %d    $%f\n", item_11, eleventh_i, cost_11);
+    printf("----------------------------------\n");
+    printf("#12     %s    %d    $%f\n", item_12, twelveth_i, cost_12);
+    printf("----------------------------------\n");
+    printf("#13     %s    %d    $%f\n", item_13, thirteenth_i, cost_13);
+    printf("----------------------------------\n");
+    printf("#14     %s    %d    $%f\n", item_14, fourteenth_i, cost_14);
+    printf("----------------------------------\n");
+    printf("#15     %s    %d    $%f\n", item_15, fifteenth_i, cost_15);
+    printf("----------------------------------\n");
+    printf("#16     %s    %d    $%f\n", item_16, sixteenth_i, cost_16);
+    printf("----------------------------------\n");
+    printf("#17     %s    %d    $%f\n", item_17, seventeenth_i, cost_17);
+    printf("----------------------------------\n");
+    printf("#18     %s    %d    $%f\n", item_18, eighteenth_i, cost_18);
+    printf("----------------------------------\n");
+    printf("#19     %s    %d    $%f\n", item_19, nineteenth_i, cost_19);
+    printf("----------------------------------\n");
+    printf("#20     %s    %d    $%f\n", item_20, twentieth_i, cost_20);
+    printf("----------------------------------\n");
+    float TOTAL_1 = cost_1 + cost_2 + cost_3 + cost_4 + cost_5 + cost_6 + cost_7 + cost_8 + cost_9 + cost_10 + cost_11 + cost_12 + cost_13 + cost_14 + cost_15 + cost_16 + cost_17 + cost_18 + cost_19 + cost_20;
+    printf("TOTAL COST              $%f\n", TOTAL_1);
+
+
+    return 0;
+}
