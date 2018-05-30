@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int user_DD, user_MM, user_YY;
+    printf("Enter your birthday in numbers on one line dd mm yyyy\n");
+    scanf("%d%d%d", &user_DD, &user_MM, &user_YY);
+
+    switch(user_MM)
+    {
+        case(1): printf("You were born on: January %d, %d", user_DD, user_YY);
+                 break;
+        case(2): printf("You were born on: February %d, %d", user_DD, user_YY);
+                 break;
+        case(3): printf("You were born on: March %d, %d", user_DD, user_YY);
+                 break;
+        case(4): printf("You were born on: April %d, %d", user_DD, user_YY);
+                 break;
+        case(5): printf("You were born on: May %d, %d", user_DD, user_YY);
+                 break;
+        case(6): printf("You were born on: June %d, %d", user_DD, user_YY);
+                 break;
+        case(7): printf("You were born on: July %d, %d", user_DD, user_YY);
+                 break;
+        case(8): printf("You were born on: August %d, %d", user_DD, user_YY);
+                 break;
+        case(9): printf("You were born on: September %d, %d", user_DD, user_YY);
+                 break;
+        case(10): printf("You were born on: October %d, %d", user_DD, user_YY);
+                 break;
+        case(11): printf("You were born on: November %d, %d", user_DD, user_YY);
+                 break;
+        case(12): printf("You were born on: December %d, %d", user_DD, user_YY);
+                 break;
+    }
+
+    return 0;
+}
