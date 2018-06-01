@@ -1,0 +1,287 @@
+/*in progress! */
+
+#include<stdio.h>
+
+int main() {
+  //float user_1;
+  int user_2;
+  int user_3;
+  int user_4;
+  int user_5;
+  int user_6;
+  int user_7;
+  int user_8;
+  int user_9;
+  int user_10;
+  int user_11;
+
+  int choice_1; //how many numbers the user wants to calculate
+  int choice_2;//this can be used as a way for user to choice multiplication or division etc.
+  int operation_1;
+
+  printf("......................\n");
+  printf(". /  .     x   .  m  .\n");
+  printf("......................\n");
+  printf(". 0  .     +   .  -  .\n");
+  printf("......................\n");
+  printf(". 7  .     8   .  9  .\n");
+  printf("......................\n");
+  printf(". 4  .     5   .  6  .\n");
+  printf("......................\n");
+  printf(". 1  .     2   .   3 .\n");
+  printf("......................\n");
+
+  printf("Integer Value Calculator\n");
+  printf("Math Operation: mult = 1, div = 2 , add = 3, sub = 4\n");
+  printf("Enter your mathematical operator\n");
+    scanf("%d", &choice_2);
+        switch(choice_2) //this statement checks the above operator choice
+                {
+                    case(1):
+
+                    break;
+                    case(2):
+                    break;
+
+                    case(3):
+                    break;
+                    case(4):
+                    break;
+                }
+
+  printf("Enter how many numbers you want to calculate: ");
+  scanf("%d", &choice_1);
+
+
+  switch(choice_1)
+  {
+      case(2): printf("Two: ");
+               scanf("%d%d", &user_2, &user_3);
+
+               if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2)
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3;
+                    printf("%d", operation_1);
+                }
+
+
+      break;
+
+      case(3): printf("Three: ");
+               scanf("%d%d%d", &user_2, &user_3, &user_4);
+               if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4;
+                    printf("%d", operation_1);
+                }
+
+      break;
+
+      case(4): printf("Four: ");
+               scanf("%d%d%d%d", &user_2, &user_3, &user_4, &user_5);
+            if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5;
+                    printf("%d", operation_1);
+                }
+      break;
+
+      case(5): printf("Five: ");
+               scanf("%d%d%d%d%d", &user_2, &user_3, &user_4, &user_5, &user_6);
+            if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5 * user_6;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5 + user_6;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5 - user_6;
+                    printf("%d", operation_1);
+                }
+      break;
+
+      case(6): printf("Six: ");
+               scanf("%d%d%d%d%d%d", &user_2, &user_3, &user_4, &user_5, &user_6, &user_7);
+            if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5 * user_6 * user_7;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5 + user_6 + user_7;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5 - user_6 - user_7;
+                    printf("%d", operation_1);
+                }
+      break;
+
+      case(7): printf("Seven: ");
+               scanf("%d%d%d%d%d%d%d", &user_2, &user_3, &user_4, &user_5, &user_6, &user_7, user_8);
+            if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5 * user_6 * user_7 * user_8;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5 + user_6 + user_7 + user_8;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5 - user_6 - user_7 - user_8;
+                    printf("%d", operation_1);
+                }
+      break;
+
+      case(8): printf("Eight: ");
+               scanf("%d%d%d%d%d%d%d%d", &user_2, &user_3, &user_4, &user_5, &user_6, &user_7, &user_8, &user_9);
+                if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5 * user_6 * user_7 * user_8 * user_9;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5 + user_6 + user_7 + user_8 + user_9;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5 - user_6 - user_7 - user_8 - user_9;
+                    printf("%d", operation_1);
+                }
+
+      break;
+
+      case(9): printf("Nine: ");
+               scanf("%d%d%d%d%d%d%d%d%d", &user_2, &user_3, &user_4, &user_5, &user_6, &user_7, &user_8, &user_9, &user_10);
+                  if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5 * user_6 * user_7 * user_8 * user_9 * user_10;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5 + user_6 + user_7 + user_8 + user_9 + user_10;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5 - user_6 - user_7 - user_8 - user_9 - user_10;
+                    printf("%d", operation_1);
+                }
+      break;
+
+      case(10): printf("Ten: ");
+                scanf("%d%d%d%d%d%d%d%d%d%d", &user_2, &user_3, &user_4, &user_5, &user_6, &user_7, &user_8, &user_9, &user_10, &user_11);
+                       if (choice_2 = 1)
+               {
+                   operation_1 = user_2 * user_3 * user_4 * user_5 * user_6 * user_7 * user_8 * user_9 * user_10 * user_11;
+                   printf("%d", operation_1);
+
+               }
+               else if (choice_2 = 2) //cant really divide directly so divide 2 3 and then 4 figure out
+               {
+                   operation_1 = user_2 / user_3;
+                   printf("%d", operation_1);
+               }
+               else if (choice_2 = 3)
+               {
+                   operation_1 = user_2 + user_3 + user_4 + user_5 + user_6 + user_7 + user_8 + user_9 + user_10 + user_11;
+                   printf("%d", operation_1);
+               }
+               else
+                {
+                    operation_1 = user_2 - user_3 - user_4 - user_5 - user_6 - user_7 - user_8 - user_9 - user_10 - user_11;
+                    printf("%d", operation_1);
+                }
+      break;
+  }
