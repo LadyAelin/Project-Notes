@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+
+int main() {
+    int a;
+    int b;
+    int choice_1;
+    int operation_1;
+   
+    
+  printf("INTEGER VALUE CALCULATOR\n");
+  printf("\nMath Operation: add = 1, sub = 2, div = 3, mult = 4\n");
+  
+  printf("......................\n");
+  printf(". /  .     x   .  m  .\n");
+  printf("......................\n");
+  printf(". 0  .     +   .  -  .\n");
+  printf("......................\n");
+  printf(". 7  .     8   .  9  .\n");
+  printf("......................\n");
+  printf(". 4  .     5   .  6  .\n");
+  printf("......................\n");
+  printf(". 1  .     2   .   3 .\n");
+  printf("......................\n");
+  
+  printf("Operation: ");
+  scanf("%d", &choice_1);
+  printf("Enter value a: ");
+  scanf("%d", &a);
+  printf("Enter value b: ");
+  scanf("%d", &b);
+  
+  switch(choice_1)
+  {
+      case (1): operation_1 = a + b;
+              printf("%d\n", operation_1);
+              break;
+      case (2): operation_1 = a - b;
+              printf("%d\n", operation_1);
+              break;
+      case (3): operation_1 = a / b;
+              printf("%d\n", operation_1);
+              break;
+      case (4): operation_1 = a * b;
+              printf("%d\n", operation_1);
+              break;
+  }
+
+
+
+    return 0;
+}
