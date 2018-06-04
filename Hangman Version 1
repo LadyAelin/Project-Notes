@@ -1,0 +1,77 @@
+/* in progress hangman version 1 using switch statements. May if else works better here */
+
+#include <stdio.h>
+
+
+int main()
+{
+    printf("Simple Hangman\n");
+    printf("Capitalize your Letters\n");
+
+    //insert image of Hangman
+    
+    char word_1= 'H';
+    char word_2= 'A';
+    char word_3= 'T';
+    
+    char user_1;
+    char user_2;
+    char user_3;
+    
+    printf("Input Letter 1: ");
+    scanf("%c", &user_1);
+   
+    switch(user_1)
+    {
+        case'H': printf("H _ _\n");
+        break;
+        default:
+        do
+        {
+            printf("\nInput Letter 1: ");
+            scanf("%c", &user_1);
+        }
+        while (user_1 != 'H');
+       
+     
+   }
+   
+   printf("Input Letter 2: ");
+   scanf("%c", &user_2);
+   
+   switch(user_2)
+   {
+       case 'A': printf("H A _\n");
+       break;
+       default:
+       do
+       {
+           printf("\nInput Letter 2: ");
+           scanf("%c", &user_2);
+       }
+       while(user_2 != 'A');
+      
+   }
+       
+    printf("Input Letter 3: ");
+    scanf("%c", &user_3);
+    
+    switch(user_3)
+    {
+        case 'T': printf("HAT");
+        default:
+        do
+        {
+            printf("\nInput Letter 3: ");
+            scanf("%c", &user_3);
+        }
+        while(user_3 != 'T');
+    }
+    
+   
+   
+    
+    
+
+    return 0;
+}
