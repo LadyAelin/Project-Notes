@@ -1,0 +1,22 @@
+/* This snippet is meant to show that char can be transformed to int and then changed to 1 to
+ * account for the value or values inputted
+ * This is to say that I can keep track to each user input that was originally a char
+ * by using this formula
+*/
+
+#include <stdio.h>
+
+int main()
+{
+  
+    
+    int val_1;
+    char c;
+    scanf("%c", &c);
+    
+    int x = c - '0';
+    
+    val_1 = x / x; //formula to make value = 1. Reasoning: conversion count
+    printf("%d", val_1);
+    return 0;
+}
