@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+This simple program uses an array to take the sum, division, and multiplication
+of two numbers. Lesson learned: make the array size bigger in order to
+conduct computations. There is a random pattern that occurs if you do not make
+the size bigger. Array elements start from 0, 1, 2...
+*/
+
+int main()
+{
+    int arry[2] = {2, 4};     // initializing the array
+    int x = arry[0] + arry[1]; // calling the stored numbers to conduct addition
+    printf("%d\n", x);
+    int y = arry[0] / arry[1];
+    printf("%d\n", y);
+    int z = arry[0] * arry[1];
+    printf("%d", z);
+
+
+
+    return 0;
+}
