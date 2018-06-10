@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
-This simple program uses an array to take the sum, division, and multiplication
+This simple program uses an array to take the sum, division, subtraction, and multiplication
 of two numbers. Lesson learned: make the array size bigger in order to
 conduct computations. There is a random pattern that occurs if you do not make
 the size bigger. Array elements start from 0, 1, 2...
@@ -15,9 +15,22 @@ int main()
     int y = arry[0] / arry[1];
     printf("%d\n", y);
     int z = arry[0] * arry[1];
-    printf("%d", z);
+    printf("%d\n", z);
+    int zy = arry[0] - arry[1];
+    printf("%d\n", zy);
 
+    float arry_1[2] = {2.0, 4.0};
+    float x_1 = arry_1[0] + arry_1[1];
+    printf("%f\n", x_1);
+    float y_1 = arry_1 [0] - arry_1[1];
+    printf("%f\n", y_1);
+    float z_1 = arry_1[0] / arry_1[1];
+    printf("%f\n", z_1);
+    float zy_1 = arry_1[0] * arry_1[1];
+    printf("%f\n", zy_1);
 
+    char arry_2[2] = {'a', 'b'};
+    printf("%c\n%c", arry_2[0], arry_2[1]);
 
     return 0;
 }
