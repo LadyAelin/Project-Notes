@@ -1,0 +1,24 @@
+Basic Banking program: 
+
+--> way to add into savings and checkings account
+--> satus updates: of the total that is currently in
+the account. calling the most recent balance and provides 
+the time of the balance
+--> saves those entered charges to the account: all bank activities
+--> can geneerate a report of all bank activities: similar to previous statement
+    --> report generated as a .txt file that is specific to the user's log in and password
+--> has a login and password that it saves as a
+.txt file and user enters to access information
+--> goal: use minimal text
+
+
+Steps to take in terms of programming:
+- user <locah.h>
+-- LC_MONETARY
+-- LC_TIME
+
+- need to first set up an environment: to log in and out--> generate that .txt file
+- user friendly interface to input balances into savings, checkings, or both
+- time sensitive entrance of information--> <time.h>
+- status updates: need to save that user input informaton in the interface into a .txt file
+    --> needs to include: previous balance and current balance
