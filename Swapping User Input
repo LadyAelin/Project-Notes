@@ -1,0 +1,24 @@
+/* I was bored at work */
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int x, y;
+    printf("Enter two numbers on the same line: ");
+    scanf("%d%d", &x, &y);
+    printf("Swap: %d %d \n", y, x);
+    
+
+    char x_1[2], y_1[2];
+    printf("Enter two characters on the same line: ");
+    scanf("%s %s", &x_1, &y_1);
+    printf("Swap: %s %s ", y_1, x_1);
+    
+    
+    
+   
+
+    return 0;
+}
