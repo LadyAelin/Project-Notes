@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("Swap Two Numbers\n");
+    int x = 2, y = 3;
+    printf("%d %d\n", x, y);
+    printf("%d %d\n", y, x);
+    
+    printf("Swap Two Chars\n");
+    char x_1 = 'a', y_1 = 'b';
+    printf("%c %c\n", x_1, y_1);
+    printf("%c %c", y_1, x_1);
+
+    return 0;
+}
