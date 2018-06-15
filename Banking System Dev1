@@ -22,3 +22,141 @@ int main()
 system(cmd);
    return 0;
 }
+
+
+Below this line is the code that can do the following: access account #, enter savings, enter checkings, make changes to savings,
+make changes to checkings, whether addition or subtraction. It uses switch statements, exit, float, int, printf, scanf. Task #2 is to
+do the following:
+    -save all those user inputs into a .txt file that is changeable/ can be updated every time with a value that is entered in
+    this will be what provides the status updates for the program especially if we already have previous values entered. Basically
+    I need to create a few files for the following: checkings and savings
+    
+    -add/ embedd a timer so that the status updates are accurate and always changing
+    
+    
+
+/**********************************************************************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+//Nine digit number is set: 175230895
+// account number helps reduce authorization
+int main()
+{
+    //setting the variables
+    float check_1, save_1, add_1C, add_1S, subtract_1C, subtract_1S, val_C, val_S;
+    int account_NUM= 175230895, deci_1C, cal_AS1, authorize_1, deci_2S, cal_AS2;
+    printf("Enter account? 1 , 2: ");
+    scanf("%d", &authorize_1);
+    
+    switch(authorize_1) //authorizing the enter account
+    {
+        case 1:
+        break;
+        case 2:
+            exit(0);
+        break;    
+    }
+    
+    printf("Enter the 9 digit Account Number: ");
+    scanf("%d", &account_NUM);
+    
+    switch(account_NUM)
+    {
+        case 175230895:
+            printf("Checking: $");
+            scanf("%f", &check_1);
+            printf("Savings: $");
+            scanf("%f", &save_1);
+        break; 
+        default:
+            exit(0);
+        break;    
+    }
+    
+    //printf("Status Report\n");//open and display saving and checking values
+    
+    printf("MAKE CHANGES TO CHECKINGS ACCOUNT? 1 , 2: ");// changes to checking
+    scanf("%d", &deci_1C);
+    
+    switch(deci_1C)
+    {
+        case 1:
+            printf("Accessing Checkings...");
+            printf("Add or Subtract? 1 , 2: ");
+            scanf("%d", &cal_AS1);
+            switch (cal_AS1)
+            {
+                        case 1: 
+                        printf("Enter Amount: $");//ammount to add to checking account
+                        scanf("%f", &add_1C);
+                        val_C = check_1 + add_1C;
+                        printf("$%f", val_C);
+                        break;
+                        case 2:
+                        printf("Enter Amount: $");//conduct operation of subtracting from account value
+                        scanf("%f", &subtract_1C);
+                        val_C = check_1 - subtract_1C;
+                        printf("$%f", val_C);
+                        break;
+                    }
+        break;
+        case 2:
+        break;    
+    }
+    
+    printf("\nMAKE CHANGES TO SAVINGS ACCOUNT? 1 , 2: ");
+    scanf("%d", &deci_2S);
+    switch(deci_2S)
+    {
+        case 1: 
+        printf("Accessing Savings...");
+        printf("Add or Subtract? 1 , 2: ");
+        scanf("%d", &cal_AS2);
+        switch(cal_AS2)
+        {
+            case 1: 
+           
+            printf("Enter Amount: $");
+             scanf("%f", &add_1S);
+             val_S = save_1 + add_1S;
+            printf("$%f", val_S);
+            break;
+            case 2:
+            printf("Enter Amount: $");
+            scanf("%f", &subtract_1S);
+            val_S = save_1 - subtract_1S;
+            printf("$%f", val_S);
+            break;
+        }
+        break;
+        case 2:
+        break;
+    }
+    
+    
+     /*This program below actually tries to get the .txt file I just need 
+     to access the terminal*/
+    /*FILE *pToFile = fopen("namefile.txt", "r");
+
+    int line = 0;
+    char input[500];
+
+    while (fgets(input, 500, pToFile)){
+        line++;
+        printf("Line:%d -> %s", line, input);
+    }
+    printf("\n\nEnd of Program\n");
+    */
+    // the code above will be used to for guidance to display the results entered 
+    //for checking and savings
+    
+    
+    
+    /*link scanf value for checking and saving in separate .txt files
+    find a way to update this information every time in the files
+    find a way to display what is entered in the files on the terminal
+   or on the dispaly screen
+   */
+
+   return 0;
+}
