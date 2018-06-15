@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*This program below actually tries to get the .txt file I just need to access the terminal*/
+    FILE *pToFile = fopen("PASS1.txt", "r");
+
+    int line = 0;
+    char input[500];
+
+    while (fgets(input, 500, pToFile)){
+        line++;
+        printf("Line:%d -> %s", line, input);
+    }
+    printf("\n\nEnd of Program\n");
+
+    fclose(pToFile);
+
+    const char *cmd = "PASS1 --command=\"./run.sh\" "; //calling the terminal figure out
+
+system(cmd);
+   return 0;
+}
