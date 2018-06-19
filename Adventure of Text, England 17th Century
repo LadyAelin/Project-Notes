@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+   char name[20], location[20], stewart[20], unworthy[20];
+   int deci_1, deci_2, gender, weather, stew_D; //make decisions
+   printf("Welcome to Text Based Adventure\n");
+   printf("Enter your name: ");
+   scanf("%s", &name);
+   printf("Hello %s", name);
+   
+   printf("\nHere are the rules: Make decisions using 1 & 2 or Type in your response\n");
+   printf("Now, are you ready to begin?");
+   scanf("%d", &deci_1);
+   
+   switch(deci_1)
+   {
+       case 1: 
+            printf("\nExcellent!\n");
+        break;
+        
+        case 2:
+            exit(0);
+        break;    
+   }
+   printf("\nIn 17th Century, England, you are newly knighted, working in the service of King James II. The King invited you %s to attend a ball in honor of his new knights. Do you attend? ", name);
+   scanf("%d", &deci_2);
+   
+   switch(deci_2)
+   {
+       case 1: 
+        printf("\nYou will attend this ball as a courtesy to the King");
+       break;
+       
+       case 2: 
+        printf("\nYou do not attend and incur the King's irritation");
+   }
+   
+   if (deci_2 == 1)
+   {
+       printf("\nYou begin major preparations for the ball. I am sorry, are you female or male?");
+       scanf("%d", &gender);
+   }
+   else
+   {
+       printf("\nThe King resends you an invitation, insisting upon your presence. And you are more than obliged to attend. Afterall he did knight you. Are you a female or male knight?");
+       scanf("%d", &gender);
+       
+   }
+   
+   switch(gender)
+   {
+       case 1: 
+        printf("\nYou belong to the King's special retinue of female knights, trained to protect the inner court or the Queen's court. You posess grace and strength\n");
+        break;
+        
+       case 2:
+        printf("\nYou belong to the King's royal knights, trained to protect his borderlands along the English channel from chaos\n");
+       break;
+   }
+   
+   printf("\nTell me about yourself: Where are you from in England? Any English like name will work here so have at it: ");
+   scanf("%s", &location);
+   
+   printf("Do you live near the English channel or inland?");
+   scanf("%d", &weather);
+   
+   switch(weather)
+   {
+       case 1:
+            printf("\nYour castle lies upon a cliff in %s surrounded by the vast icy blue Atlantic Ocean. Your castle walls are fortified with grey stones and a drawbridge. The markets below are the seafaring kind, as sailors from all over England stop by your castle for business. Your duty is to protect them and met out necessary justice. However, the most pressing duty is to ensure that the high walls of your castle are not breached by rogue parties from France, Spain, or Portugal. Since your castle is on the English Channel, you will need to make the 12 day journey inland towards London for the ball. Your assign your Stewart with the job of protecting your lands in that time\n", location);
+        break;
+        
+        case 2: 
+            printf("\nYour castle lies near a moat in %s surrounded by vast and dense green forests. It is a sight to behold since the whitewashed walls gleam in the sunglight, reflecting a green farmland below the castle grounds. The only fortification that you have to worry about here inland is that from thieves. Your duty is to protect the markets below and met out necessary justice to the thieves hiding in your forests. However, the most pressing duty is to ensure that the people follow the rule of the King since his guards pass by every few months to collect taxes. Since your castle is inland, you will need to make the 2 day trek to the King's castle holding in London for the ball. You assign your Stewart with the job of protecting your lands in that time\n", location);
+   }
+   
+    printf("\nWhat is your Stewarts name? ");
+    scanf("%s", &stewart);
+    printf("Do you trust your Stewart %s?", stewart);
+    scanf("%d", &stew_D);
+    
+    if (stew_D == 1)
+    {
+         printf("\nA Noble and brave man, your Stewart %s takes your orders and begins the fortification of the castle. A frugal man, he ensures that all is well in %s. Your trust in him proves his expertise in castle business\n", stewart, location);
+    }
+    else
+    {
+        printf("Since he is not trustworthy, who shall you appoint?");
+        scanf("%s", &unworthy);
+        printf("\nYour appointment of %s is well matched. Your stewart %s comes with you to England where you are sure he will drink away his wages and sire a few babes. Maybe you should abandon him and hire a new stewart", unworthy, stewart);
+    }
+    
+    if (weather == 1)
+    {
+        printf("\nYou begin the journey from the English Channel inland from your home in %s\n", location);
+    }
+    else
+    {
+        printf("\n You begin the journey from your forested white castle towards London from %s\n", location);
+    }
+    
+    
+    
+   
+   
+
+    return 0;
+}
