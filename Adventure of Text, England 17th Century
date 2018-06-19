@@ -61,20 +61,20 @@ int main()
        break;
    }
    
-   printf("\nTell me about yourself: Where are you from in England? Any English like name will work here so have at it: ");
+   printf("\nTell me about yourself: Where are you from in England? Any English like name that has the term shire in it will work ;) so have at it: ");
    scanf("%s", &location);
    
-   printf("Do you live near the English channel or inland?");
+   printf("\nDo you live near the English channel or inland?");
    scanf("%d", &weather);
    
    switch(weather)
    {
        case 1:
-            printf("\nYour castle lies upon a cliff in %s surrounded by the vast icy blue Atlantic Ocean. Your castle walls are fortified with grey stones and a drawbridge. The markets below are the seafaring kind, as sailors from all over England stop by your castle for business. Your duty is to protect them and met out necessary justice. However, the most pressing duty is to ensure that the high walls of your castle are not breached by rogue parties from France, Spain, or Portugal. Since your castle is on the English Channel, you will need to make the 12 day journey inland towards London for the ball. Your assign your Stewart with the job of protecting your lands in that time\n", location);
+            printf("\nYour castle lies upon a cliff in %s surrounded by the vast icy blue Atlantic Ocean. Your castle walls are fortified with grey stones and a drawbridge. The markets below are the seafaring kind, as sailors from all over England stop by your castle for business. Your duty is to protect them and met out necessary justice. However, the most pressing duty is to ensure that the high walls of your castle are not breached by rogue parties from France, Spain, or Portugal. Since your castle is on the English Channel, you will need to make the 12 day journey inland towards London for the ball. Your assign your Stewart with the job of protecting your lands in that time.\n", location);
         break;
         
         case 2: 
-            printf("\nYour castle lies near a moat in %s surrounded by vast and dense green forests. It is a sight to behold since the whitewashed walls gleam in the sunglight, reflecting a green farmland below the castle grounds. The only fortification that you have to worry about here inland is that from thieves. Your duty is to protect the markets below and met out necessary justice to the thieves hiding in your forests. However, the most pressing duty is to ensure that the people follow the rule of the King since his guards pass by every few months to collect taxes. Since your castle is inland, you will need to make the 2 day trek to the King's castle holding in London for the ball. You assign your Stewart with the job of protecting your lands in that time\n", location);
+            printf("\nYour castle lies near a moat in %s surrounded by vast and dense green forests. It is a sight to behold since the whitewashed walls gleam in the sunglight, reflecting a green farmland below the castle grounds. The only fortification that you have to worry about here inland is that from thieves. Your duty is to protect the markets below and met out necessary justice to the thieves hiding in your forests. However, the most pressing duty is to ensure that the people follow the rule of the King since his guards pass by every few months to collect taxes. Since your castle is inland, you will need to make the 2 day trek to the King's castle holding in London for the ball. You assign your Stewart with the job of protecting your lands in that time.\n", location);
    }
    
     printf("\nWhat is your Stewarts name? ");
@@ -84,22 +84,22 @@ int main()
     
     if (stew_D == 1)
     {
-         printf("\nA Noble and brave man, your Stewart %s takes your orders and begins the fortification of the castle. A frugal man, he ensures that all is well in %s. Your trust in him proves his expertise in castle business\n", stewart, location);
+         printf("\nA Noble and brave man, your Stewart %s takes your orders and begins the fortification of the castle. A frugal man, he ensures that all is well in %s. Your trust in him proves his expertise in castle business.\n", stewart, location);
     }
     else
     {
-        printf("Since he is not trustworthy, who shall you appoint?");
+        printf("\nSince he is not trustworthy, who shall you appoint?");
         scanf("%s", &unworthy);
-        printf("\nYour appointment of %s is well matched. Your stewart %s comes with you to England where you are sure he will drink away his wages and sire a few babes. Maybe you should abandon him and hire a new stewart", unworthy, stewart);
+        printf("\nYour appointment of %s is well matched. Your stewart %s comes with you to England where you are sure he will drink away his wages and sire a few babes. Maybe you should abandon him and hire a new stewart.\n", unworthy, stewart);
     }
     
     if (weather == 1)
     {
-        printf("\nYou begin the journey from the English Channel inland from your home in %s\n", location);
+        printf("\nYou begin the journey from the English Channel inland from your home in %s. The 12 day journey begins.\n", location);
     }
     else
     {
-        printf("\n You begin the journey from your forested white castle towards London from %s\n", location);
+        printf("\nYou begin the journey from your forested white castle towards London from %s. The 2 day journey begins.\n", location);
     }
     
     
