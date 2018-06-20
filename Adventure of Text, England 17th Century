@@ -5,7 +5,7 @@
 int main()
 {
    char name[20], location[20], stewart[20], unworthy[20];
-   int deci_1, deci_2, gender, weather, stew_D; //make decisions
+   int deci_1, deci_2, gender, weather, stew_D, journey; //make decisions
    printf("Welcome to Text Based Adventure\n");
    printf("Enter your name: ");
    scanf("%s", &name);
@@ -103,6 +103,19 @@ int main()
     }
     
     
+    printf("\nWas your Journey Peaceful?\n");
+    scanf("%d", &journey);
+    
+    switch(journey)
+    {
+        case 1:
+            printf("\nYour Journey was peaceful, filled with an almost pregnant silence as you make your way to King James's holding. Not a hindrance in site. You begin to be filled with a sense of forboding. As if you are being watched. Alas! You encounter a few amateur ruffians along the road. But their stained steel swords are no match for your prowess. After winning against the ruffians, you camp out for the night with your retinue among the stars on a lush greenland to deter any ruffians.\n");
+        break;
+        
+        case 2:
+            printf("\nYour Journey is not peaceful. At every bend in the road, you encounter an obstacle. But you persevere against the ruffians who are not aware of the your battle hardened nature. You do not allow them to delay your journey. It is almost as if you are part of a chess piece. Being moved in accordance to a master. The pattern of skirmishes along the road to the King James's castle holding worries you. You make a note to speak to the King about it. But for now, you stage your camp with your retinue among the stars on a lush greenland to deter any ruffians.\n");
+        break;    
+    }
     
     
     
