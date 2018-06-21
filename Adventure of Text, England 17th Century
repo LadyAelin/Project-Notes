@@ -5,7 +5,7 @@
 int main()
 {
    char name[20], location[20], stewart[20], unworthy[20], archer_1[20], archer_2[20], horse[20];
-   int deci_1, deci_2, gender, weather, stew_D, journey, hunt; //make decisions
+   int deci_1, deci_2, gender, weather, stew_D, journey, hunt, help; //make decisions
    printf("Welcome to Text Based Adventure\n");
    printf("Enter your name: ");
    scanf("%s", &name);
@@ -137,7 +137,22 @@ int main()
     printf("\nYou take %s and %s on your hunt. They locate two rabbit tracks in the woods and begin the chase. Nocking an arrow to each bow, the brave archers fell their prize. But you notice in dense undergrowth the tracks of a deer. You abandon your archers and lead your horse into a trot before stopping by a spring to tie the beast to a tree. What's your horses's name?", archer_1, archer_2);
     scanf("%s", &horse);
     
-    printf("\nYou look your prize beast %s in the eye and tell it to stay. The horse only snorts at you and remains put near the tree before beginning the task of chewing on the rope that you tied it with. You sigh and shake your head. The beast was more trouble than you care to admit but you knew what you were getting yourself into when you bought him from a pedder in %s.\n", horse, location);
+    printf("\nYou look your prize beast %s in the eye and tell it to stay. The horse only snorts at you and remains put near the tree before beginning the task of chewing on the rope that you tied it with. You sigh and shake your head. The beast was more trouble than you care to admit but you knew what you were getting yourself into when you bought him from a peddler in %s.\n", horse, location);
+    
+    printf("\nYou quiety make your way along the leafy forest floor following the deer's tracks. You trace your course east, leaving your archers in the opposite direction. You are confident that the deer stopped somewhere near here. To your chagrin, the tracks stop by a mountain slope that faces a valley. You are in awe of the scenery but disappointed that you lost your game. As you trace your way back to the camp, you suddenly hear a cry for help! Do you make your way towards the noise or do you head back to the camp\n");
+    scanf("%d", &help);
+    
+    switch(help)
+    {
+        case 1: 
+            printf("\nYou have a heart of gold and decide to make your way towards the noise. It sounded almost as if the damsel was in distress. Eager to rescue your charge, you take a dagger from your boot and run south. The image before your eyes takes you by surprise.\n");
+        break;
+        
+        case 2:
+            printf("\nYou are reluctant to go towards the noise and yet you are duty bound as a knight in King Jame's retinue to rescue the damsel in distress. You quickly make your way towards your charge, drawing a dagger from your boot as you run south. You are appalled by the image before you.\n");
+    }
+    
+    printf("\nNever before have you laid eyes upon such an angel. The woman before you was clad in a loosly fitted white sleeping gown, now covered in dirt and blood as if she were escaping from a skirmish of a battle. Her tear stained eyes are triumphant and yet tinged with fear. She had steel blue eyes that reminded you of the midnight sky during the winter. Her lips were red as blood, as if they had been recently painted. And her hair was black, falling in tresses to her waist. The woman's expression suddenly changes as she looks you in the face. She says, ""Who art thou knight and why have you come?" "You are baffled by her speech but manage to respond by asking her name. She responds by saying: ""I am Liriel.""\n ");
     
     
     
