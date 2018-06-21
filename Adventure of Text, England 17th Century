@@ -4,8 +4,8 @@
 
 int main()
 {
-   char name[20], location[20], stewart[20], unworthy[20];
-   int deci_1, deci_2, gender, weather, stew_D, journey; //make decisions
+   char name[20], location[20], stewart[20], unworthy[20], archer_1[20], archer_2[20], horse[20];
+   int deci_1, deci_2, gender, weather, stew_D, journey, hunt; //make decisions
    printf("Welcome to Text Based Adventure\n");
    printf("Enter your name: ");
    scanf("%s", &name);
@@ -116,6 +116,29 @@ int main()
             printf("\nYour Journey is not peaceful. At every bend in the road, you encounter an obstacle. But you persevere against the ruffians who are not aware of the your battle hardened nature. You do not allow them to delay your journey. It is almost as if you are part of a chess piece. Being moved in accordance to a master. The pattern of skirmishes along the road to the King James's castle holding worries you. You make a note to speak to the King about it. But for now, you stage your camp with your retinue among the stars on a lush greenland to deter any ruffians.\n");
         break;    
     }
+    
+    printf("\nYou awaken your retinue of twelve dozen knights at the crack of dawn. Do you hunt this morn?\n");
+    scanf("%d", &hunt);
+    
+    switch(hunt)
+    {
+        case 1: 
+            printf("\nYou enter the wooded forest and begin the hunt for small game. You hunt with two of your best archers.\n");
+        break;
+        
+        case 2: 
+            printf("\nYou do not hunt but by mid morning, your knights are disgruntled. You packed light for this journey. And so you choose two of your best archers and begin the hunt for small game in the wooded forest that you avoided the night before.\n");
+        break;    
+    }
+    
+    printf("\nTell me, what are the names of your best archers?");
+    scanf("%s%s", &archer_1, &archer_2);
+    
+    printf("\nYou take %s and %s on your hunt. They locate two rabbit tracks in the woods and begin the chase. Nocking an arrow to each bow, the brave archers fell their prize. But you notice in dense undergrowth the tracks of a deer. You abandon your archers and lead your horse into a trot before stopping by a spring to tie the beast to a tree. What's your horses's name?", archer_1, archer_2);
+    scanf("%s", &horse);
+    
+    printf("\nYou look your prize beast %s in the eye and tell it to stay. The horse only snorts at you and remains put near the tree before beginning the task of chewing on the rope that you tied it with. You sigh and shake your head. The beast was more trouble than you care to admit but you knew what you were getting yourself into when you bought him from a pedder in %s.\n", horse, location);
+    
     
     
     
