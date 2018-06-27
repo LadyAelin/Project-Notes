@@ -10,9 +10,7 @@
 
 int main()
 {
-    float d;
-    float prod;
-    float c;
+    float d, prod, c;
     int did = 2;
     printf("Circumference of a circle (C) = 2*pi*r\n");
     printf("C= circumference, d= diameter, r= radius\n");
