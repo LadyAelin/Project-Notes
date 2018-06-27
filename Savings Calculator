@@ -3,10 +3,7 @@
 
 int main()
 {
-    float earning1;
-    float percentage1;
-    float save_1;
-    float hun_1 = 100.0;
+    float earning1, percentage1, save_1, hun_1 = 100.0;
     printf("SAVINGS PER MONTH\n");
     printf("Enter your monthly earnings: $");
     scanf("%f", &earning1);
