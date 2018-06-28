@@ -1,0 +1,63 @@
+/*This simple program is a lesson using the header ctype.  isalum checks whether a character is alphanumeric*/
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+    int a = 'A', b = '3', c = '.';
+    
+    if (isalnum(a))
+    {
+        printf("%c is alphanumeric\n", a);
+    }
+    else 
+    {
+        printf("%c is not alphanumeric\n", a);
+    }
+    
+    if (isalnum(b))
+    {
+      printf("%c is alphanumeric\n", b);
+    }
+    else
+    {
+      printf("%c is not alphanumeric\n", b);
+    }
+    
+    if (isalnum(c))
+    {
+      printf("%c is alphanumeric\n", c);
+    }
+    else
+    {
+      printf("%c is not alphanumeric\n", c);
+    }
+
+    return 0;
+}
+
+
+/*Program below checks user input and whether it is alphanumeric*/
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+    int a;
+    
+    printf("Enter anything #1:");
+    scanf("%c", &a);
+    
+    if (isalnum(a))
+    {
+        printf("%c is alphanumeric\n", a);
+    }
+    else 
+    {
+        printf("%c is not alphanumeric\n", a);
+    }
+    
+    return 0;
+}
