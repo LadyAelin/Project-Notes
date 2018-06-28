@@ -1,80 +1,89 @@
-// will expand. See below commends as well
+/*This is a simple program that prompts the user to guess the word and it loops until they correctly enter the word necessary*/
+
 #include <stdio.h>
 
 int main()
 {
-    //char nME_1 [100];
-    char x = 'B';
-    char user_c;
-    printf("Welcome to Guess the Word\n");
-    //printf("Enter your name:\n");
-   // scanf("%s", &nME_1);
-    //printf("Hi %s\n", nME_1);
-    printf("What is the first letter that I am thinking of?\n");
-    scanf("%c", &user_c);
-    printf("You entered: %c \n", user_c);
-   if (user_c != x)
-   {
-       printf("Try again\n");
-      
-   }
-   else 
-   {
-       printf("You win!\n");
-   }
+    char letter_1, letter_2, letter_3, letter_4;
+    printf("What is the word that I am thinking of?\n");
+    printf("Enter the first letter: ");
+    scanf("%c", &letter_1);
     
+    switch(letter_1)
+    {
+        case 'l':
+        break;
+        
+        default:
+           do
+           {
+               printf("\nEnter the first letter: ");
+               scanf("%c", &letter_1);
+           }
+           while (letter_1 != 'l');
+               
+        break;    
+    }
+    
+    printf("Enter the second letter: ");
+    scanf("%c", &letter_2);
+    
+    switch(letter_2)
+    {
+        case 'o':
+        break;
+        
+        default:
+            do
+            {
+                printf("\nEnter the second letter: ");
+                scanf("%c", &letter_2);
+                
+            }
+            while (letter_2 != 'o');
+        break;    
+    }
+    
+    printf("Enter the third letter: ");
+    scanf("%c", &letter_3);
+    
+    switch(letter_3)
+    {
+        case 'v':
+        break;
+        default:
+            do
+            {
+                printf("\nEnter the third letter: ");
+                 scanf("%c", &letter_3);
+            }
+            while (letter_3 != 'v');
+        break;   
+    }
+    
+    printf("Enter the fourth letter: ");
+    scanf("%c", &letter_4);
+    
+    switch(letter_4)
+    {
+        case 'e':
+        break;
+        default:
+            do
+            {
+                printf("\nEnter the fourth letter: ");
+                scanf("%c", &letter_4);
+            }
+                
+            while (letter_4 != 'e');
+        break;    
+    }
+    
+    printf("My word is LOVE\n");
+   
+   
     
     
 
     return 0;
 }
-
-
-//alternative to include other inputs and outputs using else if
-
-
-#include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    //char nME_1 [100];
-    char x = 'B';
-    char user_c;
-    printf("Welcome to Guess the Word\n");
-    //printf("Enter your name:\n");
-    // scanf("%s", &nME_1);
-    //printf("Hi %s\n", nME_1);
-    printf("What is the first letter that I am thinking of in capital letters?\n");
-    scanf("%c", &user_c);
-    printf("You entered: %c \n", user_c);
-   if (user_c != x)
-   {
-       printf("Try again\n");
-       exit(0); //use of exit to terminate program mid way through game
-   }
-   else 
-   {
-    char y = 'A';
-    char user_c1;   
-    printf("What is the second letter that I am thinking of in capital letters?\n");
-    scanf("%c", &user_c1);
-    printf("You entered: %c", user_c1);
-   
-   if (user_c1 != y) 
-   {
-       printf("Try again\n");
-       exit(0);
-   }
-   else 
-   {
-       printf("You win!\n");
-   }
-   }
-   
-   
-   
-   
-    return 0;
-}
-
