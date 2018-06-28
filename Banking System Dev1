@@ -1,43 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int main()
-{
-    /*This program below actually tries to get the .txt file I just need to access the terminal*/
-    FILE *pToFile = fopen("PASS1.txt", "r");
-
-    int line = 0;
-    char input[500];
-
-    while (fgets(input, 500, pToFile)){
-        line++;
-        printf("Line:%d -> %s", line, input);
-    }
-    printf("\n\nEnd of Program\n");
-
-    fclose(pToFile);
-
-    const char *cmd = "PASS1 --command=\"./run.sh\" "; //calling the terminal figure out
-
-system(cmd);
-   return 0;
-}
-
-
-Below this line is the code that can do the following: access account #, enter savings, enter checkings, make changes to savings,
-make changes to checkings, whether addition or subtraction. It uses switch statements, exit, float, int, printf, scanf. Task #2 is to
-do the following:
-    -save all those user inputs into a .txt file that is changeable/ can be updated every time with a value that is entered in
-    this will be what provides the status updates for the program especially if we already have previous values entered. Basically
-    I need to create a few files for the following: checkings and savings
-    
-    -add/ embedd a timer so that the status updates are accurate and always changing
-    
-    
-
-/**********************************************************************************************************************************/
-#include <stdio.h>
-#include <stdlib.h>
 //Nine digit number is set: 175230895
 // account number helps reduce authorization
 int main()
@@ -73,6 +35,12 @@ int main()
         break;    
     }
     
+    //w+ creates the empty file for both reading and writing
+    FILE *fp;
+    fp = freopen("checks_b.txt", "w+", stdout);
+    printf("Checking: $%f", check_1);
+    fclose(fp);
+    
     //printf("Status Report\n");//open and display saving and checking values
     
     printf("MAKE CHANGES TO CHECKINGS ACCOUNT? 1 , 2: ");// changes to checking
@@ -103,6 +71,25 @@ int main()
         case 2:
         break;    
     }
+    
+    
+    
+    FILE *fP;//to open file and make changes use a+ test this with values from switch statement above
+    fP = freopen("checks_b.txt", "a+", stdout);
+    printf("Amount Added: $%f", val_C);
+    fclose(fP);
+    
+    
+    int c_1;
+    fp = fopen("checks_b.txt", "r"); //to read the file and the information in it
+    while (1){
+        c_1 = fgetc(fp);
+        if (feof(fp)) {
+            break;
+        }
+        printf("%c", c_1);
+    }
+    fclose(fp);
     
     printf("\nMAKE CHANGES TO SAVINGS ACCOUNT? 1 , 2: ");
     scanf("%d", &deci_2S);
