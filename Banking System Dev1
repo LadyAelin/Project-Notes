@@ -1,9 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 //Nine digit number is set: 175230895
 // account number helps reduce authorization
 int main()
 {
+    time_t curtime;
+
+    time(&curtime); //displaying the time
+
+    printf("Current time = %s", ctime(&curtime));
+
+    
     //setting the variables
     float check_1, save_1, add_1C, add_1S, subtract_1C, subtract_1S, val_C, val_S;
     int account_NUM= 175230895, deci_1C, cal_AS1, authorize_1, deci_2S, cal_AS2;
@@ -35,7 +43,7 @@ int main()
         break;    
     }
     
-    //w+ creates the empty file for both reading and writing
+    //w+ creates the empty file for both reading and writing. See if can incorporate current time lines 8-12
     FILE *fp;
     fp = freopen("checks_b.txt", "w+", stdout);
     printf("Checking: $%f", check_1);
