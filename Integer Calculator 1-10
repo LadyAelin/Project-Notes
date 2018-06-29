@@ -4,20 +4,7 @@
 
 int main() {
   //float user_1;
-  int user_2;
-  int user_3;
-  int user_4;
-  int user_5;
-  int user_6;
-  int user_7;
-  int user_8;
-  int user_9;
-  int user_10;
-  int user_11;
-
-  int choice_1; //how many numbers the user wants to calculate
-  int choice_2;//this can be used as a way for user to choice multiplication or division etc.
-  int operation_1;
+  int user_2, user_3, user_4, user_5, user_6, user_7, user_8, user_9, user_10, user_11, choice_1, choice_2, operation_1;
 
   printf("......................\n");
   printf(". /  .     x   .  m  .\n");
