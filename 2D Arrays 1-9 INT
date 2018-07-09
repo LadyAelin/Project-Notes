@@ -1,0 +1,29 @@
+/*Program below is modified so that It shows a board similar to a tic tac toe game
+ *it is a prototype for char x and o*/
+ 
+ #include <stdio.h>
+
+int main()
+{
+    int arr_1[3][3], i, j;
+    for(i = 0; i <3; i++){
+        for(j = 0; j <3; j++) {
+                printf("Enter value for arr_1[%d][%d]:", i, j);
+                scanf("%d", &arr_1[i][j]);
+            }
+        }
+
+    
+    printf("Board:\n");
+     for(i = 0; i <3; i++){
+        for(j = 0; j <3; j++) {
+                printf("%d ", arr_1[i][j]);
+                if (j==2){
+                    printf("\n");
+                }
+            }
+        }
+    
+
+    return 0;
+}
