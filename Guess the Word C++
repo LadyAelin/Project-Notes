@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+/*Program below does the following: it asks for a letter to be guessed. If guess is incorrect, then it exits the console. If
+  guess is correct then the program continues on until another time the user guesses incorrectly. It is rudimentary because It is missing
+  a looping statement that will be able to get the user to enter a value over and over again until they guess correctly. This is because
+  I already have a program that does that and I am too lazy to do it for c++ since do while loops don't work here lol
+  */
+
+//my word is hope
+
+int main(){
+    
+    char letter_1, letter_2, letter_3, letter_4, cor_1 = 'h', cor_2 = 'o', cor_3 = 'p', cor_4 = 'e';
+    
+    cout << "What is the letter that I am thinking of in lower case: ";
+    cin >> letter_1;
+    
+    switch (letter_1){
+        
+        case 'h':
+            cout << "H _ _ _ _\n";
+            cout << "What is the second letter that I am thinking of: ";
+            cin >> letter_2;
+                switch (letter_2){
+                    case 'o':
+                        cout << "H O _ _\n";
+                        cout << "What is the third letter that I am thinking of: ";
+                        cin >> letter_3;
+                        switch(letter_3){
+                            case 'p':
+                                cout << "H O P _\n";
+                                cout << "What is the fourth letter that I am thinking of: ";
+                                cin >> letter_4;
+                                switch (letter_4){
+                                    case 'e':
+                                        cout << "H O P E\nYou Win!\n";
+                                    break;
+                                    default:
+                                        cout << "Try again\n";
+                                    break;    
+                                }
+                            break;
+                            default:
+                                cout << "Try again\n";
+                            break;    
+                        }
+                    break;
+                    default:
+                        cout << "Try again\n";
+                    break;    
+                }
+        break;
+        default:
+           cout << "Try again\n";
+            
+        break;    
+    }
+    return 0;
+}
