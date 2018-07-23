@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main (){
+
+    float rent, gas, water, electr, misc, calc, monthly_E, calc_ED;
+
+    cout << "Spendings Record\nPlease enter the following\nRent:";
+    cin >> rent;
+    cout << "Gas: ";
+    cin >> gas;
+    cout<< "Water: ";
+    cin >> water;
+    cout<< "Electricity: ";
+    cin >> electr;
+    cout <<"Misc: ";
+
+    calc = rent + gas + water + electr + misc;
+
+    cout << "Total Spending $" << calc;
+    cout << "\nEnter your Monthly Earnings: ";
+    cin >> monthly_E;
+
+    calc_ED = monthly_E - calc;
+
+    cout << "Remaining Balance Per Month After Spednings $" << calc_ED;
+
+    return 0;
+}
