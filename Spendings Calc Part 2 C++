@@ -1,0 +1,70 @@
+#include <iostream>
+
+using namespace std;
+
+int main (){
+    
+    float rent, gas, water, electr, misc, calc, monthly_E, calc_ED, percent_1, hund_1 = 100;
+    char deci_1; //to increase amount earned or no?
+    
+    cout << "Spendings Record\nPlease enter the following\nRent:";
+    cin >> rent;
+    cout << "Gas: ";
+    cin >> gas;
+    cout<< "Water: ";
+    cin >> water;
+    cout<< "Electricity: ";
+    cin >> electr;
+    cout <<"Misc: ";
+    cin >> misc;
+    
+    calc = rent + gas + water + electr + misc;
+    
+    cout << "Total Spending $\n" << calc;
+    cout << "\nEnter your Monthly Earnings: ";
+    cin >> monthly_E;
+    
+    calc_ED = monthly_E - calc;
+    
+    cout << "\nRemaining Balance Per Month After Spendings $" << calc_ED;
+    
+    /* Below in progress*/
+    
+    cout << "\nWould you like to increase your Monthly Earnings? Y or N";
+    cin >> deci_1;
+    
+    switch (deci_1){
+        
+        case 'Y':
+            cout << "What is the percentage?";
+            cin >> calc_ED;
+            percent_1 = (calc_ED * monthly_E) / hund_1;
+            cout << "You want to Earn $"<< percent_1 << " more\n";
+            
+        break;
+    
+        case 'N':
+            cout << "Earnings Remain: " << calc_ED;
+        break;    
+    }
+    
+    if (percent_1 <= 20){
+        cout << "Don't worry about earning more $$";
+    }
+    else if (percent_1 <= 50){
+        cout << "Cut down on misc spending";
+    }
+    else if (percent_1 <= 80){
+        cout << "Cut down on gas. Might as well commute\n";
+    }
+    else if (percent_1 <= 110){
+        cout << "Consider a part time job\n";
+    }
+    else (percent_1 >= 200);{
+        cout << "Learn to Code: get a side gig as a programmer or web developer\n";
+    }
+    
+    
+
+    return 0;
+}
