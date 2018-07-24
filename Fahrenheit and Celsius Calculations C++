@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main (){
+    float val_F, val_C, convert_F, convert_C, F_To_C = 32, F_To_C_2= 0.5556, C_To_F = 1.8, C_To_F_2 = 32;
+
+    char choice;
+
+    cout << "Choose F= Fahrenheit or C= Celsius: ";
+    cin >> choice;
+
+    switch (choice){
+
+
+        case 'F':
+            cout << "Enter Temperature F: ";
+            cin >> val_F;
+            convert_F = (val_F - F_To_C) * F_To_C_2;
+            cout << "Temperature in C: " << convert_F;
+        break;
+
+        case 'C':
+            cout << "Enter Temperature C: ";
+            cin >> val_C;
+            convert_C =  (C_To_F * val_C) + C_To_F_2;
+            cout << "Temperature in F: " << convert_C;
+        break;
+    }
