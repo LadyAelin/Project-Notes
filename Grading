@@ -1,0 +1,45 @@
+/*simple program that tells the user their grade*/
+
+#include <iostream>
+
+using namespace std;
+
+int main (){
+    
+    float grade_1P;
+    
+    cout << "Enter the grade that you got for your programming class: ";
+    cin >> grade_1P;
+    
+    if (grade_1P == 100){
+        
+        cout << "you got a perfect score";
+    }
+    
+    else if (grade_1P >= 90){
+        
+        cout << "you got an A";
+    }
+    else if (grade_1P >= 80){
+        
+        cout << "you got a B";
+    }
+    else if (grade_1P >= 70){
+        
+        cout << "you got a C";
+    }
+    
+    else if (grade_1P >= 60){
+        
+        cout << "you got a D";
+    }
+    else {
+        
+        cout << "you failed the class";
+    }
+    
+    
+    
+    
+    return 0;
+}
