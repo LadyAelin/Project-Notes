@@ -1,0 +1,114 @@
+#include <iostream>
+using namespace std;
+
+
+int main (){
+	
+char BIN0[] = "00000000";
+char BIN1[] = "00000001";
+char BIN2[] = "00000010";
+char BIN3[] = "00000011";
+char BIN4[] = "00000100";
+char BIN5[] = "00000101";
+char BIN6[] = "00000110";
+char BIN7[] = "00000111";
+char BIN8[] = "00001000";
+char BIN9[] = "00001001";
+char BIN10[] = "00001010";
+char BIN11[] = "00001011";
+char BIN12[] = "00001100";
+char BIN13[]= "00001101";
+char BIN14[] = "00001110";
+char BIN15[] = "00001111";
+char BIN16[] = "00010000";
+char BIN17[] = "00010001";
+char BIN18[] = "00010010";
+char BIN19[] = "00010011";
+char BIN20[] = "00010100";
+	
+	
+	
+	int deci_val, conv_2 = 0, conv_main; //declaration value to check
+	
+	cout << "Decimal to Binary Conversion 1-20\n" << "Input the decimal value: ";
+	cin >> deci_val;
+
+
+
+	switch (deci_val) {
+	    case 0:
+	    cout << BIN0;
+	    break;
+	    case 1:
+	    cout << BIN1;
+	    break;
+	    case 2: 
+	    cout << BIN2;
+	    break;
+	    case 3:
+	    cout << BIN3;
+	    break;
+	    case 4: 
+	    cout << BIN4;
+	    break;
+	    case 5:
+	    cout << BIN5;
+	    break;
+	    case 6:
+	    cout << BIN6;
+	    break;
+	    case 7:
+	    cout << BIN7;
+	    break;
+	    case 8: 
+	    cout << BIN8;
+	    break;
+	    case 9:
+	    cout << BIN9;
+	    break;
+	    case 10:
+	    cout << BIN10;
+	    break;
+	    case 11:
+	    cout << BIN11;
+	    break;
+	    case 12:
+	    cout << BIN12;
+	    break;
+	    case 13:
+	    cout << BIN13;
+	    break;
+	    case 14:
+	    cout << BIN14;
+	    break;
+	    case 15:
+	    cout << BIN15;
+	    break;
+	    case 16:
+	    cout << BIN16;
+	    break;
+	    case 17:
+	    cout << BIN17;
+	    break;
+	    case 18:
+	    cout << BIN18;
+	    break;
+	    case 19:
+	    cout << BIN19;
+	    break;
+	    case 20:
+	    cout << BIN20;
+
+
+
+
+}	
+
+	
+
+
+
+return 0;
+
+
+}
