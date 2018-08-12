@@ -1,0 +1,23 @@
+/*Program below helps me understand functions in more depth and how I can utilize it in the main function*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int add (int a, int b){
+	
+	int r;
+	r = a + b;
+	return (r);
+}
+
+int main (){
+    
+    int blue = 10, black = 20, call;
+    
+    call = add(blue, black);
+    cout << call;
+    
+	return 0;
+}
