@@ -1,0 +1,29 @@
+/*User input passed to a function. It is a modidication of the first function*/
+
+#include <iostream>
+
+using namespace std;
+
+int add (int a, int b){
+	
+	int r;
+	r = a + b;
+	return (r);
+}
+
+int main()
+{
+    int blue, black, call;
+    
+    cout << "Enter a number: ";
+    cin >> blue;
+    
+    cout << "Enter another number: ";
+    cin >> black;
+    
+    call= add (blue, black);
+    cout << call;
+    
+
+    return 0;
+}
