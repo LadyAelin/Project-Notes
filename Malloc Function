@@ -1,0 +1,38 @@
+/*The program below will be an attempt to create memory space and add to that space using malloc*/
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+   int *pointer_init;
+   pointer_init = (int*) malloc(5*sizeof(int));
+   
+   if (!pointer_init){
+       cout << "Memory alloc failed";
+       exit(1);
+   }
+   
+   int user_in;  //init user
+   cout << "Enter an integer value: ";
+   cin >> user_in;
+   cout << "Init values..."<< endl;
+   
+   for (int i = 0; i < 5; i++){
+       pointer_init[i] = i*1+1; //to have it print out 1,2,3,4
+   }
+    
+   cout << "Init values: " << endl;
+   
+   for (int i = 0; i < 5; i++){ //have it displayed for my eyes
+       cout << pointer_init[i] + user_in << endl;
+      
+       
+   }
+   free(pointer_init);
+   
+   
+    return 0;
+}
