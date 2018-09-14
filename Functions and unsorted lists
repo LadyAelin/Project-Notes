@@ -1,0 +1,16 @@
+#given an list that is not sorted
+items = [4,1,2,12,56,98]
+
+def listed (items):
+            user_in = int(input("Enter number: "))
+            items.append(user_in)
+            return items
+
+def sorting(items):
+    items.sort()
+    return items
+
+listed(items)
+sorting(items)
+
+print(items)
