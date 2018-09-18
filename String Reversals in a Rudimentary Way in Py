@@ -1,0 +1,13 @@
+#add items to list and then reverse the order in this list
+string_items = ["z", "j", "l", "m", "b"]
+new_string = []
+#do the below without calling the append function that many times...
+def function (new_string):
+    for x in range (0, len(string_items)):
+        new_string.append(string_items[-1])
+        new_string.append(string_items[-2])
+        new_string.append(string_items[-3])
+        new_string.append(string_items[-4])
+        new_string.append(string_items[-5])
+        return new_string
+print(function(new_string))
