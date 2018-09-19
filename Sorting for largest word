@@ -1,0 +1,14 @@
+#for user input
+sen = input("Enter a string of words: ")
+#string converted into an array of words
+convert_to_array = sen.split()
+
+print(convert_to_array)
+#function to print out the largest word
+def LongestWord(convert_to_array):
+    temporary_hold_array = convert_to_array[0]
+    for words in convert_to_array:
+        if (words >= temporary_hold_array):
+            temporary_hold_array = words
+    return temporary_hold_array
+print(LongestWord(convert_to_array)) 
