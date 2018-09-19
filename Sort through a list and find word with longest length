@@ -1,0 +1,10 @@
+#credit goes to AR
+sen = ["words", "apple", "dictionaries"]
+def LongestWord(sen):
+    temp_hold = sen[0]
+    for words in sen:
+        if (len(words)) >= (len(temp_hold)):
+            temp_hold = words
+    return temp_hold         
+    
+print (LongestWord(sen))
