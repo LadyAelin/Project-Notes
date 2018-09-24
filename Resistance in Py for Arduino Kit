@@ -1,0 +1,133 @@
+'''
+black = 0, 1
+brown = 1, 10
+red = 2, 100
+orange = 3, 1000
+yellow = 4, 10000
+green = 5, 100000
+blue = 6, 1000000
+violet = 7, 10000000
+grey = 8, 100000000
+
+tolerance = red is 20%, gold is 5%, silver is 10%, no band = 20%
+
+1 (brown) 0 (black) x 100 (red) = 1,000 ohms 
+'''
+#the program below finds out the resistance on a 4 band resistor
+
+#created list of colors and list of tolerance to access
+list_of_colors = ['black', 'brown', 'red', 'orange', 'yellow','green', 'blue', 'violet', 'grey']
+list_of_tolerance = ['red', 'gold', 'silver', 'no band']
+#to get user input for bands 1 to 4
+band_1 = input('Band 1: ')
+band_2 = input('Band 2: ')
+band_3 = input('Band 3: ')
+band_4 = input('Band 4: ')
+
+#function for band 1
+def what_is_my_resistor1(band_1):
+    if band_1 == list_of_colors[0]:
+        calculate_1 = 0
+    elif band_1 == list_of_colors[1]:
+        calculate_1 = 1
+    elif band_1 == list_of_colors[2]:
+        calculate_1 = 2
+    elif band_1 == list_of_colors[3]:
+        calculate_1 = 3
+    elif band_1 == list_of_colors[4]:
+        calculate_1 = 4
+    elif band_1 == list_of_colors[5]:
+        calculate_1 = 5
+    elif band_1 == list_of_colors[6]:
+        calculate_1 = 6
+    elif band_1 == list_of_colors[7]:
+        calculate_1 = 7
+    elif band_1 == list_of_colors[8]:
+        calculate_1 = 8
+    else:
+        print ('Wrong Input')
+    return calculate_1
+    
+#function for band 2    
+def what_is_my_resistor2 (band_2):
+    if band_2 == list_of_colors[0]:
+        calculate_2 = 0
+    elif band_2 == list_of_colors[1]:
+        calculate_2 = 1
+    elif band_2 == list_of_colors[2]:
+        calculate_2 = 2
+    elif band_2 == list_of_colors[3]:
+        calculate_2 = 3
+    elif band_2 == list_of_colors[4]:
+        calculate_2 = 4
+    elif band_2 == list_of_colors[5]:
+        calculate_2 = 5
+    elif band_2 == list_of_colors[6]:
+        calculate_2 = 6
+    elif band_2 == list_of_colors[7]:
+        calculate_2 = 7
+    elif band_2 == list_of_colors[8]:
+        calculate_2 = 8
+    else:
+        print ('Wrong Input')
+    return calculate_2
+    
+#function for band 3
+def what_is_my_resistor3 (band_3):
+    if band_3 == list_of_colors[0]:
+        calculate_3 = 1
+    elif band_3 == list_of_colors[1]:
+        calculate_3 = 10
+    elif band_3 == list_of_colors[2]:
+        calculate_3 = 100
+    elif band_3 == list_of_colors[3]:
+        calculate_3 = 1000
+    elif band_3 == list_of_colors[4]:
+        calculate_3 = 10000
+    elif band_3 == list_of_colors[5]:
+        calculate_3 = 100000
+    elif band_3 == list_of_colors[6]:
+        calculate_3 = 1000000
+    elif band_3 == list_of_colors[7]:
+        calculate_3 = 10000000
+    elif band_3 == list_of_colors[8]:
+        calculate_3 = 100000000
+    else:
+        print ('Wrong input')
+    return calculate_3 
+    
+#function for band 4    
+def what_is_my_resistor4 (band_4):
+    if band_4 == list_of_tolerance[0]:
+        calculate_4 = '20% tolerance'
+    elif band_4 == list_of_tolerance[1]:
+        calculate_4 = '5% tolerance'
+    elif band_4 == list_of_tolerance[2]:
+        calculate_4 == '10% tolerance'
+    elif band_4 == list_of_tolerance[3]:
+        calculate_4 == '20% tolerance'
+    else:
+        print ('Wrong Input')
+    return calculate_4
+    
+'''merging the outputs of two functions together (1,2) into a string, then convert string to int
+   then calculate resistance and then telling the author the resistance and tolerance  
+'''
+def calculate_resistance (what_is_my_resistor1, what_is_my_resistor2, what_is_my_resistor3, what_is_my_resistor4):
+    #create list and append two outputs into list
+    merge_two_outputs = [] 
+    merge_two_outputs.append(what_is_my_resistor1)
+    merge_two_outputs.append(what_is_my_resistor2)
+    #create string
+    string_of_merge = ''. join(map(str, merge_two_outputs)) 
+    # convert string to int example '10' = 10
+    convert_to_int = int(string_of_merge) 
+    #calculate resistance
+    calculate_after_merge = convert_to_int * what_is_my_resistor3 
+    print ('You have a', calculate_after_merge, 'ohm resistor with', what_is_my_resistor4)
+    return calculate_after_merge
+    
+#print out the results from function calculate_resistance by calling all previous functions and bands
+print(calculate_resistance(what_is_my_resistor1(band_1), what_is_my_resistor2(band_2), what_is_my_resistor3(band_3), what_is_my_resistor4(band_4))) 
+    
+    
