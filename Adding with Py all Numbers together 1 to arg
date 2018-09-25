@@ -1,0 +1,17 @@
+#adding from 1 to a certain argument provided by user
+
+get_user_in = int (input())
+number_for_range = get_user_in
+list_of_numbers = []
+num = 1
+
+for i in range (num, number_for_range+1):
+	list_of_numbers.append(i)
+sum_of_numers = list_of_numbers
+
+def get_sum (sum_of_numers):
+	sum_of_numers = sum(list_of_numbers)
+	return sum_of_numers
+	
+print (get_sum(sum_of_numers))
+	
