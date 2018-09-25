@@ -1,0 +1,28 @@
+'''
+python file program
+lesson: do each operation of read
+and write separate from each other
+'''
+
+#write to file
+f = open ('iis.txt', 'w')
+message = f.write('\nPython is a great language for beginners')
+f.close()
+
+'''#read to file
+f = open ('iis.txt', 'r')
+reading = f.read()
+print(reading)
+f.close()
+'''
+
+#appending to existing file
+
+f = open ('iis.txt', 'a')
+append = f.write('\nPythonista')
+f.close()
+
+f = open ('iis.txt', 'r')
+second_read = f.read()
+print (second_read)
+f.close()
