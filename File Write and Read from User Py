@@ -1,0 +1,26 @@
+'''
+The program below takes user input and records the numbers into a file that exists
+'''
+
+list_of_numbers = []
+#get user input append, and sort, converted to int
+def user_input_append_sort (list_of_numbers):
+	for i in range (0, 10):
+		user_list = int(input())
+		list_of_numbers.append(user_list)
+		list_of_numbers.sort()
+		convert_string_2 = ' '.join(map (str, list_of_numbers))
+	return convert_string_2
+
+string_to_upload_1 = user_input_append_sort(list_of_numbers)
+
+	
+#interacting with the file below and adding user data as .txt
+f = open ('data2.txt', 'a')
+append = f.write( string_to_upload_1)
+f.close()
+
+f = open ('data2.txt', 'r')
+read_file = f.read()
+print(read_file)
+f.close() 
