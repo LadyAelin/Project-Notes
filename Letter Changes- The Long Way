@@ -1,0 +1,71 @@
+change_letter = list (input ())
+
+tempo = []
+
+def next_letter (change_letter):
+	tempo = []
+	for i in change_letter:
+		if i == 'a':
+			i = 'b'
+		elif i == 'b':
+			i = 'c'
+		elif i == 'c':
+			i = 'd'
+		elif i == 'd':
+			i = 'e'
+		elif i == 'e':
+			i = 'f'
+		elif i == 'f':
+			i = 'g'
+		elif i == 'g':
+			i = 'h'
+		elif i == 'h':
+			i = 'i'
+		elif i == 'i':
+			i = 'j'
+		elif i == 'j':
+			i = 'k'
+		elif i == 'k':
+			i = 'l'
+		elif i == 'l':
+			i = 'm'
+		elif i == 'm':
+			i = 'n'
+		elif i == 'n':
+			i = 'o'
+		elif i == 'o':
+			i = 'p'
+		elif i == 'p':
+			i = 'q'
+		elif i == 'q':
+			i = 'r'
+		elif i == 'r':
+			i = 's'
+		elif i == 's':
+			i = 't'
+		elif i == 't':
+			i = 'u'
+		elif i == 'u':
+			i = 'v'
+		elif i == 'v':
+			i = 'w'
+		elif i == 'w':
+			i = 'x'
+		elif i == 'x':
+			i = 'y'
+		elif i == 'y':
+			i = 'z'
+		elif i == 'z':
+			i = 'a'
+		tempo.append(i)
+	join_method = ''.join(tempo)
+	join_method = join_method.replace('a', 'A')
+	join_method = join_method.replace('e', 'E')
+	join_method = join_method.replace('i', 'I')
+	join_method = join_method.replace('o', 'O')
+	join_method = join_method.replace('u', 'U')
+	return join_method
+	
+print (next_letter(change_letter))
+
+
