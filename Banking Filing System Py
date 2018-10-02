@@ -1,0 +1,92 @@
+'''
+banking in py
+-> way to add into savings and checkings account
+--> satus updates: of the total that is currently in
+the account. calling the most recent balance and provides 
+the time of the balance
+--> saves those entered charges to the account: all bank activities
+--> can geneerate a report of all bank activities: similar to previous statement
+    --> report generated as a .txt file that is specific to the user's log in and password
+--> has a login and password that it saves as a
+.txt file and user enters to access information
+--> goal: use minimal text
+'''
+import sys
+import datetime
+
+#input date into file
+save_date_time = str(datetime.datetime.now())
+
+f = open('banking.txt', 'a')
+append = f.write(save_date_time) #call function here
+f.close()
+
+#make newline
+
+f = open('banking.txt', 'a')
+append = f.write('\n') #call function here
+f.close()
+
+
+#get user access
+print ("Access Checkings? yes or no")
+get_permission = input()
+
+if get_permission == 'yes':
+	print ('Accessing Checkings...')
+elif get_permission == 'no':
+	sys.exit(0)
+	
+#get original amount if yes
+print ("Enter Original Amount: ")
+checking_original_balance = int(input())
+convert_checking_str = str (checking_original_balance)
+
+#save original balance to file after converting to str
+f = open('banking.txt', 'a')
+append = f.write(convert_checking_str) #call function here
+f.close()
+
+#make new line 
+
+f = open('banking.txt', 'a')
+append = f.write('\n') #call function here
+f.close()
+
+#get user input on if they want to make changes
+print ('Make changes to Original Amount?')
+make_changes_to_original = input()	
+
+if make_changes_to_original == 'yes':
+	print ("Making Changes...")
+elif make_changes_to_original == 'no':
+		sys.exit(0)
+
+#get changes if yes
+print ("Add or Subtract? ")
+add_or_sub = input ()
+
+def conduct_calculation (add_or_sub):
+	if add_or_sub == 'add':
+		print ('Enter change: ')
+		get_add_change = int (input())
+		conduct_CA = checking_original_balance + get_add_change
+		convert_calc_str = str(conduct_CA)
+	elif add_or_sub == 'subtract':
+		print ('Enter change: ')
+		get_add_change = int (input())
+		conduct_CA = checking_original_balance - get_add_change
+		convert_calc_str = str (conduct_CA)
+	return convert_calc_str
+
+upload_calc = str(conduct_calculation(add_or_sub))
+#input results from the calculation	
+f = open('banking.txt', 'a')
+append = f.write(upload_calc)
+f.close()
+
+#make new line
+
+f = open('banking.txt', 'a')
+append = f.write('\n') #call function here
+f.close()
