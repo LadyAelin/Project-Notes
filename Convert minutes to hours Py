@@ -1,0 +1,8 @@
+num = int(input())
+
+def Timeconvert (num):
+	make_into_div = str(divmod( num,60)).strip('()')
+	replace_in = make_into_div.replace (",", "").split()
+	make_join = ':'.join(replace_in)
+	return make_join
+print(Timeconvert(num))	
