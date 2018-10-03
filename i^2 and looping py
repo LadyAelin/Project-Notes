@@ -1,0 +1,20 @@
+'''
+looping
+
+Read an integer N . 
+For all non-negative integers i < N , print i^2 . 
+See the sample for details.
+
+input 5
+
+output 0,1,4,9,16
+'''
+
+get_in = int (input())
+
+def looping(get_in):
+	for i in range (0, get_in):
+		do = i * i
+		print (do)
+	return ' '
+print (looping(get_in))	
