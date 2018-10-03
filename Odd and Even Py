@@ -1,0 +1,20 @@
+get_input = int(input ())
+def check_if_weird (get_input):
+	check_range = [2,3,4,5]
+	inclusive_range = [6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+	greater_than = [20]
+	if get_input % 2 == 0:
+		for num in check_range:
+			if get_input == num:
+				print ('Not Weird')
+		for ns in inclusive_range:
+			if get_input == ns:
+				print ('Weird')
+		for gr in greater_than:
+			if get_input > gr:
+				print ('Not Weird')
+	else:
+		result = print ('Weird')
+	return ' '
+
+print (check_if_weird(get_input))	
