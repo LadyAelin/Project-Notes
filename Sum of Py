@@ -1,0 +1,9 @@
+user = int(input())
+def gettingthatsum (user):
+    put_in_list = []
+    for i in range (0, user):
+        get_in = input()
+        put_in_list.append(get_in)
+    getsum = sum(put_in_list)    
+    return getsum    
+print(gettingthatsum(user))
