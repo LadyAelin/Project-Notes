@@ -16,7 +16,6 @@ the years 2000 and 2400 are leap years, while 1800,
 '''
 
 year = int (input())
-
 def leapyear (year):
 	calculation1 = year % 4 #leap year 
 	calculation2 = year % 100 #not leap year
@@ -25,8 +24,12 @@ def leapyear (year):
 	if calculation1 == 0:
 		if calculation2 == 0:
 			if calculation3 == 0:
-				print ('True')
+				print ('True')	
 			else:
-				print ('False')	
+				print ('False')
+		else:
+			print ('True')
+	else:
+		print ('False')
 	return ' '
 print (leapyear(year))		
