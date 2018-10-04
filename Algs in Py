@@ -1,0 +1,35 @@
+'''
+blank
+
+get user input like 6
+
+that will be the number of times to ask for 
+input
+
+append each of the numbers into a list
+
+conduct sum to get total sum
+
+what do i know? inputs below
+
+The first line contains an integer, , 
+denoting the size of the array. 
+
+The second line contains  
+space-separated integers representing 
+the array's elements.
+
+convert space-separated:
+
+x = [int(i) for i in x.split()]
+'''
+
+integ = int (input())
+second_input = input()
+def takesum (integ, second_input):
+	second_input = [int(i) for i in second_input.split()]
+	summake = ''
+	for i in range(0, integ):
+		summake = sum(second_input)
+	return summake
+print (takesum(integ, second_input))	
