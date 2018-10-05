@@ -1,0 +1,34 @@
+space_int = input()
+space_int = [int (i) for i in space_int.split()]
+
+def makedel (space_int):
+	ara1 = list (space_int)	
+	del ara1[0]	#remove 1st elem
+	ara2 = list (space_int)
+	del ara2[1]	#remove 2nd elem
+	ara3 = list (space_int)
+	del ara3[2]	#remove 3rd elem
+	ara4 = list(space_int)
+	del ara4[3]	#remove 4th elem
+	ara5 = list (space_int)
+	del ara5[4]	#remove 5th elem
+	appendsum = [] #keep total sums here
+	dosum1 = sum(ara1)
+	appendsum.append(dosum1)
+	dosum2 = sum(ara2)
+	appendsum.append(dosum2)
+	dosum3 = sum(ara3)
+	appendsum.append(dosum3)
+	dosum4 = sum(ara4)
+	appendsum.append(dosum4)
+	dosum5 = sum(ara5)
+	appendsum.append(dosum5)
+	maxmin = [] #keep both max and min here
+	findmax = max(appendsum)
+	maxmin.append(findmax)
+	findmin = min(appendsum)
+	maxmin.append(findmin)
+	maxmin.sort()
+	makestr = str (maxmin).replace ('[', '').replace (']', '').replace (',', '')
+	return makestr
+print (makedel(space_int))
