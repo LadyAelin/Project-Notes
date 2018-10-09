@@ -1,0 +1,43 @@
+'''
+Word order py
+
+Output  lines. 
+On the first line, output the number of distinct words from the input. 
+On the second line, output the number of occurrences
+for each distinct word according to their appearance
+in the input.
+ 
+ You are given  words. Some words may repeat. 
+ For each word, output its number of occurrences. 
+ The output order should correspond with the input 
+ order of appearance of the word. See the sample
+ input/output for clarification.
+'''
+
+from collections import Counter
+
+get_input = int(input()) #first input leave as string
+make_l = []
+for i in range (get_input):
+	get_string_for_list = input () #second input
+	make_l.append(get_string_for_list)
+
+def word_order (get_string_for_list):
+	#make_l = get_string_for_list.split() #split string to list
+	myset = set(make_l) #create set
+	find_len = len(myset) #how many distinct words
+	for_count = make_l #to get all words
+	place_nums = []
+	place_nums.append(find_len) #how many distinct words
+	do_counter = Counter(for_count)	#gives me for each distinct word
+	get_keys = do_counter.keys()
+	for_counters = []
+	for key, value in do_counter.items():
+		for_counters.append(value) #how many times it appears
+		for_counters.sort(reverse=True)
+	finl_form1 = str (place_nums)
+	finl_form2 = str (for_counters)
+	combination = finl_form1.replace('[', '').replace (']', '') + '\n' + finl_form2.replace('[', '').replace (']', '').replace (',','')
+	return combination
+
+print (word_order(get_string_for_list))
