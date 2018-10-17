@@ -1,0 +1,48 @@
+'''
+Solved in 5 minutes (first time I ever did that with a challenge)
+
+intersections
+
+The first line contains ,
+the number of students who have subscribed to 
+the English newspaper. 
+
+The second line contains  
+space separated roll numbers of those students.
+
+The third line contains , 
+the number of students who have subscribed
+ to the French newspaper. 
+ 
+The fourth line contains  
+space separated roll numbers of those students.
+
+Input:
+
+9
+1 2 3 4 5 6 7 8 9
+9
+10 1 2 3 11 21 55 6 8
+
+
+Output:
+
+5
+
+they have both subcriptions
+'''
+
+engl_paper = int (input())
+space_engl_paper = input().split()
+[int (i) for i in space_engl_paper]
+french_paper = int (input())
+space_french_paper = input().split()
+[int (j) for j in space_french_paper]
+
+def create_set_intersection (space_engl_paper, space_french_paper):
+	set_english = set (space_engl_paper)
+	set_french = set (space_french_paper)
+	make_intersection = set_english.intersection(set_french)
+	find_len_intersection = len (make_intersection)
+	return find_len_intersection
+print (create_set_intersection(space_engl_paper, space_french_paper))	
