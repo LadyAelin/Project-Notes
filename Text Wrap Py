@@ -1,0 +1,14 @@
+'''
+text wrap
+'''
+
+import textwrap
+
+get_str = input()
+get_width = int (input())
+
+def wrap (get_str, get_width):
+	do_wrapping = textwrap.wrap(get_str, get_width)
+	format_it = str (do_wrapping).replace ('[', '').replace (']', '').replace(',', '').replace (' ', '\n').replace ("'", "")
+	return format_it
+print (wrap(get_str, get_width))
